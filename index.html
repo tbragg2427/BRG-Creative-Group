@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BRG Creative Group | Strategy. Story. Impact.</title>
+
+<!-- Social / link preview -->
+<meta name="description" content="BRG Creative Group — Strategy. Story. Impact. Brand films, growth marketing, and creative for ambitious brands.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brgcreativegroup.com/">
+<meta property="og:title" content="BRG Creative Group">
+<meta property="og:description" content="Strategy. Story. Impact.">
+<meta property="og:image" content="https://brgcreativegroup.com/assets/brg-social-preview.png">
+<meta property="og:image:width" content="1536">
+<meta property="og:image:height" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BRG Creative Group">
+<meta name="twitter:description" content="Strategy. Story. Impact.">
+<meta name="twitter:image" content="https://brgcreativegroup.com/assets/brg-social-preview.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -1159,19 +1173,20 @@
   /* PERFORMANCE — disable services bg video on small screens
      to save battery, data, and rendering cost. Poster image still shows. */
   @media (max-width: 768px) {
-    .services-bg-video { display: none; }
+    /* Videos now play on mobile — keep them visible */
+    .services-bg-video {
+      display: block;
+    }
+    /* Slightly stronger overlay on mobile for text legibility over video */
     .services-bg-overlay {
       background:
         radial-gradient(ellipse at 50% 30%, rgba(15,20,25,0.4) 0%, rgba(15,20,25,0.85) 80%),
-        linear-gradient(180deg, rgba(15,20,25,0.92) 0%, rgba(15,20,25,0.98) 100%),
-        url("assets/brand-reel-poster.jpg") center/cover;
+        linear-gradient(180deg, rgba(15,20,25,0.92) 0%, rgba(15,20,25,0.98) 100%);
       opacity: 0.95;
     }
-    /* Work-section loops also go static on mobile — poster still shows via the <video> poster attribute */
-    .work-loop video { display: none; }
-    .work-loop {
-      background-size: cover;
-      background-position: center;
+    /* Work-section loops also play on mobile */
+    .work-loop video {
+      display: block;
     }
   }
 
