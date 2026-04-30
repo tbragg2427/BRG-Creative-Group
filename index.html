@@ -1567,6 +1567,62 @@
       });
     });
   })();
+
+  // Force-play videos when they scroll into view (handles strict autoplay policies).
+  // Poster image remains as a graceful fallback if the browser still refuses to play.
+  (function() {
+    var videos = document.querySelectorAll('video');
+    if (!videos.length) return;
+
+    // Helper: try to play a video, swallow errors silently (poster will show)
+    function tryPlay(video) {
+      var playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(function() {
+          // Autoplay was blocked — poster image stays visible. No console noise.
+        });
+      }
+    }
+
+    // If IntersectionObserver isn't available (very old browsers), just try playing all videos once
+    if (!('IntersectionObserver' in window)) {
+      videos.forEach(tryPlay);
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        var video = entry.target;
+        if (entry.isIntersecting) {
+          tryPlay(video);
+        } else {
+          // Pause off-screen videos to save resources
+          if (!video.paused) {
+            video.pause();
+          }
+        }
+      });
+    }, {
+      threshold: 0.1,        // start playing when 10% visible
+      rootMargin: '50px'     // begin loading slightly before they enter view
+    });
+
+    videos.forEach(function(video) {
+      observer.observe(video);
+    });
+
+    // Also retry playback on first user interaction anywhere on the page
+    // (some browsers unlock autoplay only after the user touches/clicks the page)
+    function unlockOnInteraction() {
+      videos.forEach(tryPlay);
+      window.removeEventListener('touchstart', unlockOnInteraction);
+      window.removeEventListener('click', unlockOnInteraction);
+      window.removeEventListener('scroll', unlockOnInteraction);
+    }
+    window.addEventListener('touchstart', unlockOnInteraction, { passive: true, once: false });
+    window.addEventListener('click', unlockOnInteraction, { once: false });
+    window.addEventListener('scroll', unlockOnInteraction, { passive: true, once: false });
+  })();
 </script>
 
 </body>
