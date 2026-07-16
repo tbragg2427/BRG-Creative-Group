@@ -50,4 +50,4 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-Sitemap: https://brgcreativegroup.com/sitemap.xml
+Sitemap: https://www.brgcreativegroup.com/sitemap.xml
