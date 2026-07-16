@@ -12,7 +12,8 @@
 <!-- Social / link preview -->
 <meta name="description" content="Selected work from BRG Creative Group — brand films, yacht media, and cinematic ads built to move brands.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://brgcreativegroup.com/work.html">
+<meta property="og:url" content="https://www.brgcreativegroup.com/work.html">
+<link rel="canonical" href="https://www.brgcreativegroup.com/work.html">
 <meta property="og:title" content="Our Work | BRG Creative Group">
 <meta property="og:description" content="Strategy. Story. Impact.">
 <meta property="og:image" content="https://brgcreativegroup.com/assets/brg-social-preview.png">
@@ -107,6 +108,57 @@
     transition: width 0.3s ease;
   }
   .nav-links a:not(.nav-cta):hover::after { width: 100%; }
+
+  /* Resources dropdown */
+  .dropdown { position: relative; }
+  .dropdown .caret {
+    display: inline-block;
+    margin-left: 8px;
+    width: 6px; height: 6px;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.3s;
+  }
+  .dropdown:hover .caret { transform: rotate(225deg) translateY(-1px); }
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: -20px;
+    min-width: 190px;
+    list-style: none;
+    background: var(--bg-2);
+    border: 1px solid var(--line-strong);
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
+  }
+  .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -15px; left: 0; right: 0;
+    height: 15px;
+  }
+  .dropdown:hover .dropdown-menu,
+  .dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+  }
+  .dropdown-menu li a::after { display: none !important; }
+  nav:has(.dropdown:hover),
+  nav:has(.dropdown:focus-within) {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
 
   .nav-cta {
     padding: 10px 22px;
@@ -567,6 +619,18 @@
       padding: 8px 0;
     }
     .nav-cta { margin-top: 16px; text-align: center; }
+    .dropdown-menu {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      background: none;
+      border: none;
+      padding: 0 0 0 18px;
+      min-width: 0;
+    }
+    .dropdown-menu li a { font-size: 13px; color: var(--ink-mute); }
+    .dropdown .caret { display: none; }
 
     section { padding: 80px 24px; }
     .work-page { padding-top: 120px; }
@@ -641,6 +705,13 @@
     <li><a href="index.html#approach">Approach</a></li>
     <li><a href="index.html#work">Industries</a></li>
     <li><a href="index.html#team">Team</a></li>
+    <li class="dropdown">
+      <a href="blog.html" class="dropdown-trigger">Resources<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="blog.html">Articles</a></li>
+        <li><a href="work.html">Case Studies</a></li>
+      </ul>
+    </li>
     <li><a href="https://calendly.com/trevorbragg9/30min" target="_blank" rel="noopener" class="nav-cta">Start a Project</a></li>
   </ul>
 </nav>
