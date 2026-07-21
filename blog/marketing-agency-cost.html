@@ -179,6 +179,13 @@
     -webkit-mask-image: none;
   }
 
+  /* Mobile menu fix: the nav mask clips its fixed child panel, so lift it while open */
+  nav.menu-open,
+  nav:has(.nav-links.open) {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
   .nav-toggle {
     display: none;
     background: none; border: none; cursor: pointer;
@@ -400,6 +407,8 @@
     toggle.addEventListener('click', function() {
       var isOpen = links.classList.toggle('open');
       toggle.classList.toggle('open', isOpen);
+      var navEl = toggle.parentElement;
+      if (navEl) navEl.classList.toggle('menu-open', isOpen);
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
@@ -407,6 +416,8 @@
       a.addEventListener('click', function() {
         links.classList.remove('open');
         toggle.classList.remove('open');
+        var navEl2 = toggle.parentElement;
+        if (navEl2) navEl2.classList.remove('menu-open');
         toggle.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
       });
