@@ -12,12 +12,16 @@
   var nav = document.querySelector('.nav');
   if (nav) {
     var hero = document.querySelector('[data-hero]');
+    var darkUntil = 0;
+    var measure = function () { darkUntil = hero ? hero.offsetHeight - nav.offsetHeight : 0; };
     var setScrolled = function () {
-      nav.classList.toggle('scrolled', window.scrollY > 8);
-      if (hero) nav.classList.toggle('on-dark', window.scrollY < hero.offsetHeight - nav.offsetHeight);
+      var y = window.scrollY;
+      nav.classList.toggle('scrolled', y > 8);
+      if (hero) nav.classList.toggle('on-dark', y < darkUntil);
     };
-    setScrolled();
+    measure(); setScrolled();
     window.addEventListener('scroll', setScrolled, { passive: true });
+    window.addEventListener('resize', function () { measure(); setScrolled(); }, { passive: true });
   }
 
   /* ---- Mobile menu ---- */
@@ -84,7 +88,24 @@
 
   /* ---- Videos: play in view, pause out of view. Poster stays if blocked. ---- */
   var videos = document.querySelectorAll('video[data-autoplay]');
+  /* Lazy sources: a video with data-src downloads nothing until it is near the viewport */
+  var loadSrc = function (v) {
+    if (v.dataset.poster && !v.poster) v.poster = v.dataset.poster;
+    if (v.dataset.src && !v.dataset.loaded) {
+      v.src = v.dataset.src;
+      v.dataset.loaded = '1';
+      v.load();
+    }
+  };
+  /* The hero loop starts after the first paint so the poster and text land first */
+  var eager = document.querySelector('video[data-eager]');
+  if (eager && !reduceMotion) {
+    var startHero = function () { loadSrc(eager); var p = eager.play(); if (p !== undefined) p.catch(function () {}); };
+    if (document.readyState === 'complete') setTimeout(startHero, 150);
+    else window.addEventListener('load', function () { setTimeout(startHero, 150); });
+  }
   var tryPlay = function (v) {
+    loadSrc(v);
     var p = v.play();
     if (p !== undefined) p.catch(function () {});
   };
@@ -98,11 +119,11 @@
           if (entry.isIntersecting) tryPlay(v);
           else if (!v.paused) v.pause();
         });
-      }, { threshold: 0.15, rootMargin: '80px' });
+      }, { threshold: 0.05, rootMargin: '240px 0px' });
       videos.forEach(function (v) { vo.observe(v); });
     }
     var unlock = function () {
-      videos.forEach(function (v) { if (v.paused) tryPlay(v); });
+      videos.forEach(function (v) { if (v.paused && (v.dataset.loaded || !v.dataset.src)) tryPlay(v); });
       window.removeEventListener('touchstart', unlock);
       window.removeEventListener('click', unlock);
     };
