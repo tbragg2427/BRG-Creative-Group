@@ -3,1701 +3,743 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BRG Creative Group | Strategy. Story. Impact.</title>
+<title>BRG Creative Group | Marketing &amp; Video Agency, Jupiter FL</title>
 
-<!-- Favicon -->
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-<!-- Social / link preview -->
-<meta name="description" content="BRG Creative Group — Strategy. Story. Impact. Brand films, growth marketing, and creative for ambitious brands.">
+<meta name="description" content="Growth marketing consultancy with in-house cinematic video in Jupiter and Palm Beach Gardens. Brand, web, local SEO, paid ads and yacht media for South Florida.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.brgcreativegroup.com/">
 <link rel="canonical" href="https://www.brgcreativegroup.com/">
 <meta property="og:title" content="BRG Creative Group">
-<meta property="og:description" content="Strategy. Story. Impact.">
-<meta property="og:image" content="https://brgcreativegroup.com/assets/brg-social-preview.png">
+<meta property="og:description" content="Strategy. Story. Impact. A marketing and growth consultancy with a production company inside it.">
+<meta property="og:image" content="https://www.brgcreativegroup.com/assets/brg-social-preview.png">
 <meta property="og:image:width" content="1536">
 <meta property="og:image:height" content="1024">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BRG Creative Group">
 <meta name="twitter:description" content="Strategy. Story. Impact.">
-<meta name="twitter:image" content="https://brgcreativegroup.com/assets/brg-social-preview.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="twitter:image" content="https://www.brgcreativegroup.com/assets/brg-social-preview.png">
+
+<link rel="preload" href="/assets/fonts/archivo-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/source-serif-4-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "BRG Creative Group",
+  "url": "https://www.brgcreativegroup.com",
+  "description": "Marketing and growth consultancy with in-house cinematic production. Brand strategy, web, local SEO, paid advertising, content production, and growth consulting.",
+  "areaServed": ["Jupiter, Florida", "Palm Beach Gardens, Florida", "South Florida"],
+  "founder": [
+    { "@type": "Person", "name": "Trevor Bragg" },
+    { "@type": "Person", "name": "Lauren Nesbitt" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/brgcreativegroup",
+    "https://www.linkedin.com/company/bragg-productions/"
+  ]
+}
+</script>
+
 <style>
-  :root {
-    --bg: #0a0e12;
-    --bg-2: #0f1419;
-    --ink: #f5f1e8;
-    --ink-soft: #c9c2b3;
-    --ink-mute: #8a8579;
-    --gold: #c9a961;
-    --gold-soft: #d4b876;
-    --line: rgba(245, 241, 232, 0.08);
-    --line-strong: rgba(245, 241, 232, 0.18);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    background: var(--bg);
-    color: var(--ink);
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .serif { font-family: 'Cormorant Garamond', serif; }
-
-  /* Grain overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.04;
-    z-index: 100;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  }
-
-  /* NAV */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0;
-    z-index: 50;
-    padding: 28px 48px;
-    display: flex; justify-content: space-between; align-items: center;
-    background: linear-gradient(180deg, rgba(10,14,18,0.85) 0%, rgba(10,14,18,0) 100%);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    mask-image: linear-gradient(180deg, #000 0%, #000 75%, rgba(0,0,0,0.7) 90%, transparent 100%);
-    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 75%, rgba(0,0,0,0.7) 90%, transparent 100%);
-  }
-
-  .logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
-    letter-spacing: 0.18em;
-    color: var(--gold);
-    font-weight: 500;
-  }
-
-  .nav-links { display: flex; gap: 40px; list-style: none; }
-  .nav-links a {
-    color: var(--ink-soft);
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    transition: color 0.3s;
-    position: relative;
-  }
-  .nav-links a:hover { color: var(--gold); }
-  .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -6px; left: 0;
-    width: 0; height: 1px;
-    background: var(--gold);
-    transition: width 0.3s ease;
-  }
-  .nav-links a:hover::after { width: 100%; }
-
-  /* Resources dropdown */
-  .dropdown { position: relative; }
-  .dropdown .caret {
-    display: inline-block;
-    margin-left: 8px;
-    width: 6px; height: 6px;
-    border-right: 1px solid currentColor;
-    border-bottom: 1px solid currentColor;
-    transform: rotate(45deg) translateY(-2px);
-    transition: transform 0.3s;
-  }
-  .dropdown:hover .caret { transform: rotate(225deg) translateY(-1px); }
-  .dropdown-menu {
-    position: absolute;
-    top: calc(100% + 14px);
-    left: -20px;
-    min-width: 190px;
-    list-style: none;
-    background: var(--bg-2);
-    border: 1px solid var(--line-strong);
-    padding: 10px 0;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(8px);
-    transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
-  }
-  .dropdown-menu::before {
-    content: '';
-    position: absolute;
-    top: -15px; left: 0; right: 0;
-    height: 15px;
-  }
-  .dropdown:hover .dropdown-menu,
-  .dropdown:focus-within .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  .dropdown-menu li a {
-    display: block;
-    padding: 10px 20px;
-    font-size: 12px;
-    letter-spacing: 0.2em;
-  }
-  .dropdown-menu li a::after { display: none; }
-  nav:has(.dropdown:hover),
-  nav:has(.dropdown:focus-within) {
-    mask-image: none;
-    -webkit-mask-image: none;
-  }
-
-  /* Mobile menu fix: the nav mask clips its fixed child panel, so lift it while open */
-  nav.menu-open,
-  nav:has(.nav-links.open) {
-    mask-image: none;
-    -webkit-mask-image: none;
-  }
-
-  .nav-cta {
-    padding: 10px 22px;
-    border: 1px solid var(--gold);
-    color: var(--gold) !important;
-    border-radius: 0;
-    transition: all 0.3s;
-  }
-  .nav-cta:hover {
-    background: var(--gold);
-    color: var(--bg) !important;
-  }
-  .nav-cta::after { display: none; }
-
-  /* HERO */
+  /* ---- Hero: full-bleed footage, the lockup, the slogan ---- */
   .hero {
-    min-height: 100vh;
     position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: var(--field);
+    color: var(--field-ink);
     display: flex;
-    align-items: center;
-    padding: 120px 48px 80px;
+    flex-direction: column;
+    justify-content: flex-end;
     overflow: hidden;
   }
-
-  .hero-bg {
+  .hero-video { position: absolute; inset: 0; }
+  .hero-video video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-tint { position: absolute; inset: 0; background: rgba(15, 34, 51, 0.34); }
+  .hero-lockup {
     position: absolute;
     inset: 0;
-    background:
-      radial-gradient(ellipse at 70% 40%, rgba(201, 169, 97, 0.12) 0%, transparent 55%),
-      radial-gradient(ellipse at 20% 80%, rgba(50, 90, 130, 0.18) 0%, transparent 60%),
-      linear-gradient(180deg, #0a0e12 0%, #0d1217 100%);
-    z-index: 0;
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: end;
-    gap: 60px;
-  }
-
-  .hero-meta {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 32px;
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards;
-  }
-  .hero-meta .dot {
-    width: 6px; height: 6px;
-    background: var(--gold);
-    border-radius: 50%;
-    box-shadow: 0 0 12px var(--gold);
-  }
-  .hero-meta span {
-    font-size: 14px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-  }
-
-  .hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: clamp(56px, 9vw, 144px);
-    line-height: 1.02;
-    letter-spacing: -0.02em;
-    color: var(--ink);
-    opacity: 0;
-    animation: fadeUp 1s ease 0.15s forwards;
-  }
-  .hero h1 em {
-    font-style: italic;
-    color: var(--gold);
-    font-weight: 400;
-  }
-
-  .hero-tag {
-    margin-top: 36px;
-    max-width: 580px;
-    font-size: 19px;
-    line-height: 1.65;
-    color: var(--ink-soft);
-    opacity: 0;
-    animation: fadeUp 1s ease 0.4s forwards;
-  }
-
-  .hero-side {
-    text-align: right;
-    opacity: 0;
-    animation: fadeUp 1s ease 0.6s forwards;
-  }
-  .hero-side .num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    color: var(--gold);
-    letter-spacing: 0.2em;
-  }
-  .hero-side .label {
-    font-size: 13px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-    margin-top: 6px;
-  }
-
-  .scroll-indicator {
-    position: absolute;
-    bottom: 40px; left: 50%;
-    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    color: var(--ink-mute);
-    font-size: 12px;
-    letter-spacing: 0.3em;
+    justify-content: center;
+    text-align: center;
+    padding: var(--nav-h) var(--gutter) 160px;
+    pointer-events: none;
+  }
+  .hero-lockup .mark-svg { width: min(56vw, 520px); height: auto; color: var(--field-ink); }
+  .hero-lockup .rule { width: 72px; height: 1px; background: var(--field-ink); margin: 40px 0 28px; opacity: 0.9; }
+  .hero-lockup .slogan {
+    font-size: clamp(13px, 1.3vw, 17px);
+    font-weight: 500;
+    letter-spacing: 0.32em;
     text-transform: uppercase;
-    opacity: 0;
-    animation: fadeUp 1s ease 0.9s forwards;
-    z-index: 2;
+    color: var(--field-ink);
+    padding-left: 0.32em;
   }
-  .scroll-indicator .line {
-    width: 1px; height: 60px;
-    background: linear-gradient(180deg, var(--gold) 0%, transparent 100%);
-    animation: scrollLine 2s ease-in-out infinite;
-  }
-
-  @keyframes scrollLine {
-    0%, 100% { transform: scaleY(1); transform-origin: top; }
-    50% { transform: scaleY(0.4); transform-origin: top; }
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* MARQUEE */
-  .marquee {
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    padding: 28px 0;
-    overflow: hidden;
-    background: var(--bg-2);
-  }
-  .marquee-track {
-    display: flex;
-    gap: 80px;
-    animation: scroll 35s linear infinite;
-    white-space: nowrap;
-  }
-  .marquee-item {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 22px;
-    color: var(--ink-mute);
-    display: flex;
-    align-items: center;
-    gap: 80px;
-  }
-  .marquee-item::after {
-    content: '✦';
-    color: var(--gold);
-    font-style: normal;
-  }
-  @keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-
-  /* SECTIONS */
-  section { padding: 140px 48px; position: relative; }
-
-  .section-header {
+  .hero-lockup .slogan i { font-style: normal; opacity: 0.6; margin: 0 0.9em; }
+  .hero-foot {
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 80px;
-    margin-bottom: 100px;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+    gap: 32px;
+    align-items: end;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    border-top: 1px solid rgba(244, 242, 236, 0.28);
   }
+  .hero-foot .lead { color: var(--field-ink); max-width: 40ch; font-size: clamp(17px, 1.35vw, 20px); }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+  .hero-actions .btn { background: var(--field-ink); color: var(--field); }
+  .hero-actions .btn.ghost { background: transparent; color: var(--field-ink); box-shadow: inset 0 0 0 1px rgba(244, 242, 236, 0.7); }
+  @media (hover: hover) and (pointer: fine) {
+    .hero-actions .btn:hover { background: #ffffff; }
+    .hero-actions .btn.ghost:hover { background: var(--field-ink); color: var(--field); }
+  }
+  .hero-foot .wrap-inner { display: contents; }
 
-  .section-label {
-    font-size: 18px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--gold);
+  /* Entrance: one authored moment */
+  .js .hero-lockup .mark-svg,
+  .js .hero-lockup .rule,
+  .js .hero-lockup .slogan { opacity: 0; animation: heroIn 1100ms var(--ease-out) forwards; }
+  .js .hero-lockup .mark-svg { transform: translateY(18px); animation-delay: 200ms; }
+  .js .hero-lockup .rule { transform: scaleX(0); animation-name: ruleIn; animation-delay: 700ms; animation-duration: 800ms; }
+  .js .hero-lockup .slogan { transform: translateY(10px); animation-delay: 900ms; }
+  .js .hero-foot { opacity: 0; animation: heroIn 900ms var(--ease-out) 1200ms forwards; }
+  .js .hero-video { opacity: 0; animation: fadeIn 1400ms var(--ease-out) forwards; }
+  @keyframes heroIn { to { opacity: 1; transform: none; } }
+  @keyframes ruleIn { to { opacity: 1; transform: scaleX(1); } }
+  @keyframes fadeIn { to { opacity: 1; } }
+
+  /* ---- Intro (the thesis, below the fold) ---- */
+  .intro { padding: var(--section) 0 0; }
+  .intro-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+    gap: 48px;
+    align-items: end;
+  }
+  .intro h1 { font-size: clamp(38px, 5vw, 72px); }
+  .intro .lead { max-width: 36ch; }
+  .intro-facts {
     display: flex;
-    align-items: flex-start;
-    gap: 14px;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 56px;
+    padding-top: 20px;
+    padding-bottom: var(--section);
+    border-top: 1px solid var(--rule-strong);
   }
-  .section-label::before {
-    content: '';
-    width: 40px; height: 1px;
-    background: var(--gold);
-    margin-top: 13px;
-  }
+  .intro-facts div { font-size: 14px; color: var(--ink-2); }
+  .intro-facts div span { display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 4px; }
 
-  .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: clamp(48px, 6.5vw, 84px);
-    line-height: 1.05;
-    letter-spacing: -0.015em;
-    color: var(--ink);
-  }
-  .section-title em { font-style: italic; color: var(--gold); }
-
-  /* SERVICES */
-  .services {
-    background: var(--bg-2);
-    border-top: 1px solid var(--line);
-    position: relative;
-    overflow: hidden;
-  }
-  .services-bg-video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    opacity: 0.18;
-    pointer-events: none;
-  }
-  .services-bg-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background:
-      radial-gradient(ellipse at 50% 30%, rgba(15,20,25,0.65) 0%, rgba(15,20,25,0.95) 80%),
-      linear-gradient(180deg, rgba(15,20,25,0.85) 0%, rgba(15,20,25,0.92) 100%);
-    pointer-events: none;
-  }
-  .services > .section-header,
-  .services > .services-grid {
-    position: relative;
-    z-index: 2;
-  }
+  /* ---- Services ledger ---- */
   .services-grid {
-    max-width: 1400px;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    background: var(--line);
-    border: 1px solid var(--line);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 64px;
+    border-top: 1px solid var(--rule-strong);
   }
   .service {
-    background: rgba(15, 20, 25, 0.92);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    padding: 56px 48px;
-    transition: background 0.4s;
-    cursor: pointer;
-    position: relative;
-    min-height: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 40px 0 44px;
+    border-bottom: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 112px 1fr;
+    gap: 24px;
   }
-  .service:hover {
-    background: rgba(10, 14, 18, 0.96);
-  }
-  .service:hover .service-arrow {
-    transform: translate(6px, -6px);
-    color: var(--gold);
-  }
-  .service-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 20px;
-    color: var(--gold);
-    letter-spacing: 0.14em;
-  }
-  .service-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 38px;
-    font-weight: 400;
-    margin: 18px 0 14px;
-    color: var(--ink);
-    letter-spacing: -0.01em;
-  }
-  .service-desc {
-    color: var(--ink-soft);
-    font-size: 19px;
-    line-height: 1.65;
-    max-width: 480px;
-  }
-  .service-arrow {
-    position: absolute;
-    top: 56px; right: 48px;
-    width: 22px;
-    height: 22px;
-    color: var(--ink-mute);
-    transition: all 0.3s;
-    display: block;
-  }
-  .service-arrow svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
+  .service .label { padding-top: 7px; }
+  .service h3 { margin-bottom: 12px; }
+  .service p { font-family: var(--serif); font-size: 17px; line-height: 1.55; color: var(--ink-2); max-width: 40ch; }
 
-  /* APPROACH */
-  .approach-content {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .approach-grid {
+  /* ---- Approach ---- */
+  .phases {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
-    border-top: 1px solid var(--line-strong);
-  }
-  .approach-step {
-    padding: 60px 40px 60px 0;
-    border-right: 1px solid var(--line);
-    position: relative;
-  }
-  .approach-step:last-child { border-right: none; }
-  .approach-step:not(:first-child) { padding-left: 40px; }
-
-  .approach-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 80px;
-    color: var(--gold);
-    line-height: 1;
-    margin-bottom: 24px;
-    font-weight: 400;
-  }
-  .approach-step h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 32px;
-    font-weight: 400;
-    color: var(--ink);
-    margin-bottom: 18px;
-    letter-spacing: -0.01em;
-  }
-  .approach-step p {
-    color: var(--ink-soft);
-    font-size: 19px;
-    line-height: 1.65;
-  }
-
-  /* WORK / PORTFOLIO */
-  .work {
-    background: var(--bg-2);
-    border-top: 1px solid var(--line);
-  }
-  .work-grid {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-  }
-  .work-item {
-    background: var(--bg);
-    border: 1px solid var(--line);
-    overflow: hidden;
-    transition: border-color 0.4s;
-    display: flex;
-    flex-direction: column;
-  }
-  .work-item:hover { border-color: var(--gold); }
-
-  .work-video {
-    aspect-ratio: 16/9;
-    background: linear-gradient(135deg, #1a2128 0%, #0d1217 100%);
-    position: relative;
-    overflow: hidden;
-  }
-  .work-video iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  /* Vertical (9:16) wrapper for short-form Vimeo embeds */
-  .work-video-vertical-wrap {
-    background: linear-gradient(135deg, #1a2128 0%, #0d1217 100%);
-    padding: 32px;
-    display: flex;
-    justify-content: center;
-  }
-  .work-video.vertical {
-    aspect-ratio: 9/16;
-    width: 100%;
-    max-width: 360px;
-    background: #000;
-  }
-
-  /* Ambient looping video tiles (industry showcases, not playable) */
-  .work-loop {
-    aspect-ratio: 16/9;
-    position: relative;
-    overflow: hidden;
-    background-color: #000;
-    background-size: cover;
-    background-position: center;
-  }
-  .work-loop video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .work-loop::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(10,14,18,0) 30%, rgba(10,14,18,0.55) 100%);
-    pointer-events: none;
-  }
-  .work-loop-label {
-    position: absolute;
-    bottom: 20px;
-    left: 24px;
-    z-index: 2;
-    font-size: 13px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--gold);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .work-loop-label::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: var(--gold);
-    border-radius: 50%;
-    box-shadow: 0 0 8px var(--gold);
-    animation: pulse 2s ease-in-out infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 0.6; }
-    50% { opacity: 1; }
-  }
-
-  /* Vimeo placeholder styling */
-  .video-placeholder {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-    background:
-      radial-gradient(ellipse at 30% 40%, rgba(201, 169, 97, 0.12) 0%, transparent 60%),
-      linear-gradient(180deg, #0d1a26 0%, #050a10 100%);
-  }
-  .video-placeholder.realestate {
-    background:
-      radial-gradient(ellipse at 50% 30%, rgba(201, 169, 97, 0.14) 0%, transparent 60%),
-      linear-gradient(160deg, #1a1410 0%, #0d0a08 100%);
-  }
-  .video-placeholder.events {
-    background:
-      radial-gradient(ellipse at 50% 70%, rgba(201, 169, 97, 0.16) 0%, transparent 55%),
-      radial-gradient(ellipse at 30% 30%, rgba(120, 70, 180, 0.12) 0%, transparent 55%),
-      linear-gradient(180deg, #14101a 0%, #0a0810 100%);
-  }
-  .video-placeholder.smb {
-    background:
-      radial-gradient(ellipse at 70% 50%, rgba(201, 169, 97, 0.1) 0%, transparent 60%),
-      radial-gradient(ellipse at 30% 80%, rgba(50, 90, 130, 0.16) 0%, transparent 60%),
-      linear-gradient(135deg, #1a2128 0%, #0d1217 100%);
-  }
-  .play-icon {
-    width: 64px;
-    height: 64px;
-    border: 1.5px solid var(--gold);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    transition: all 0.3s;
-  }
-  .play-icon::before {
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 14px solid var(--gold);
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    margin-left: 4px;
-  }
-  .work-item:hover .play-icon {
-    background: var(--gold);
-  }
-  .work-item:hover .play-icon::before {
-    border-left-color: var(--bg);
-  }
-  .placeholder-label {
-    font-size: 12px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-    margin-top: 8px;
-  }
-  .placeholder-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 16px;
-    color: var(--ink-soft);
-    margin-top: 6px;
-  }
-
-  .work-meta {
-    padding: 28px 32px 32px;
-    border-top: 1px solid var(--line);
-  }
-  .work-cat {
-    font-size: 12px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 10px;
-  }
-  .work-meta h4 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    font-weight: 400;
-    color: var(--ink);
-    margin-bottom: 6px;
-    letter-spacing: -0.01em;
-    line-height: 1.1;
-  }
-  .work-meta p {
-    color: var(--ink-soft);
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  .work-cta {
-    text-align: center;
-    margin-top: 80px;
-  }
-
-  /* CTA BUTTON */
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    padding: 18px 36px;
-    background: transparent;
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    font-size: 13px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-family: 'Inter Tight', sans-serif;
-  }
-  .btn:hover {
-    background: var(--gold);
-    color: var(--bg);
-  }
-  .btn-primary {
-    background: var(--gold);
-    color: var(--bg);
-  }
-  .btn-primary:hover {
-    background: var(--gold-soft);
-  }
-
-  /* TEAM */
-  .team {
-    border-top: 1px solid var(--line);
-  }
-  .team-content {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-  .team-intro {
-    max-width: 720px;
-    margin: 0 auto 100px;
-    text-align: center;
-  }
-  .team-intro h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: clamp(36px, 5vw, 64px);
-    line-height: 1.05;
-    margin-bottom: 32px;
-    letter-spacing: -0.015em;
-  }
-  .team-intro h2 em { font-style: italic; color: var(--gold); }
-  .team-intro p {
-    color: var(--ink-soft);
-    font-size: 17px;
-    line-height: 1.7;
-  }
-
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 48px;
-    margin-bottom: 80px;
+    border-top: 1px solid var(--field-rule);
   }
-
-  .member {
-    border: 1px solid var(--line);
-    background: var(--bg-2);
-    transition: border-color 0.4s;
-  }
-  .member:hover { border-color: var(--line-strong); }
-
-  .member-image {
-    aspect-ratio: 4/5;
-    position: relative;
-    overflow: hidden;
-    border-bottom: 1px solid var(--line);
-  }
-  .member-image.trev {
-    background:
-      radial-gradient(ellipse at 30% 30%, rgba(201, 169, 97, 0.18) 0%, transparent 65%),
-      linear-gradient(135deg, #1a2128 0%, #0d1217 100%);
-  }
-  .member-image.lauren {
-    background:
-      radial-gradient(ellipse at 70% 30%, rgba(201, 169, 97, 0.15) 0%, transparent 65%),
-      radial-gradient(ellipse at 30% 80%, rgba(50, 90, 130, 0.18) 0%, transparent 60%),
-      linear-gradient(135deg, #15202a 0%, #0a1015 100%);
-  }
-  .member-monogram {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 140px;
-    font-style: italic;
-    color: var(--gold);
-    opacity: 0.28;
-    letter-spacing: -0.04em;
-  }
-  .member-image::after {
+  .phase { padding-top: 32px; position: relative; }
+  .phase::before {
     content: '';
     position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 40%;
-    background: linear-gradient(180deg, transparent, rgba(10,14,18,0.4));
-    z-index: 2;
-    pointer-events: none;
+    top: -1px; left: 0;
+    width: 48px; height: 1px;
+    background: var(--field-ink);
   }
-  .member-photo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
-    z-index: 1;
-  }
-
-  .member-body {
-    padding: 40px 36px 44px;
-  }
-  .member-role {
-    font-size: 12px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 14px;
-  }
-  .member h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 1;
-    margin-bottom: 8px;
-    letter-spacing: -0.01em;
-    color: var(--ink);
-  }
-  .member-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 18px;
-    color: var(--gold);
-    margin-bottom: 24px;
-  }
-  .member-bio {
-    color: var(--ink-soft);
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: 28px;
-  }
-  .member-focus {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding-top: 24px;
-    border-top: 1px solid var(--line);
-  }
-  .member-focus span {
-    font-size: 12px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-    padding: 6px 12px;
-    border: 1px solid var(--line);
-  }
-
-  .team-network {
-    text-align: center;
-    padding-top: 60px;
-    border-top: 1px solid var(--line);
-  }
-  .team-network .label {
-    font-size: 13px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--ink-mute);
-    margin-bottom: 16px;
-  }
-  .team-network h4 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: clamp(24px, 3vw, 36px);
-    color: var(--ink);
-    letter-spacing: -0.01em;
-    line-height: 1.2;
-  }
-  .team-network h4 em {
-    font-style: normal;
-    color: var(--gold);
-  }
-
-  /* CONTACT */
-  .contact {
-    background: var(--bg-2);
-    border-top: 1px solid var(--line);
-    text-align: center;
-    padding: 160px 48px;
-  }
-  .contact-label {
-    font-size: 14px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 32px;
-  }
-  .contact h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: clamp(48px, 7vw, 96px);
-    line-height: 1;
-    margin-bottom: 48px;
-    letter-spacing: -0.02em;
-  }
-  .contact h2 em { font-style: italic; color: var(--gold); }
-  .contact-email {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 24px;
-    color: var(--ink);
-    text-decoration: none;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 6px;
-    transition: color 0.3s;
-    display: inline-block;
-    margin-bottom: 60px;
-  }
-  .contact-email:hover { color: var(--gold); }
-
-  .contact-cards {
-    max-width: 920px;
-    margin: 0 auto 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-  }
-  .contact-card {
-    border: 1px solid var(--line);
-    background: var(--bg);
-    padding: 36px 32px;
-    text-align: left;
-    transition: border-color 0.3s, transform 0.3s;
-  }
-  .contact-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-2px);
-  }
-  .contact-card .role {
-    font-size: 12px;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 8px;
-  }
-  .contact-card .name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    color: var(--ink);
-    margin-bottom: 24px;
-    letter-spacing: -0.01em;
-    line-height: 1;
-  }
-  .contact-card .line-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-  }
-  .contact-card .line-item:last-child { margin-bottom: 0; }
-  .contact-card .icon {
-    width: 14px;
-    height: 14px;
-    color: var(--gold);
-    flex-shrink: 0;
-  }
-  .contact-card a {
-    color: var(--ink-soft);
-    text-decoration: none;
-    font-size: 15px;
-    transition: color 0.3s;
-    word-break: break-word;
-  }
-  .contact-card a:hover { color: var(--gold); }
-
-  .contact-cta-row {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
-  /* FOOTER */
-  footer {
-    padding: 60px 48px 40px;
-    border-top: 1px solid var(--line);
+  .phase .label { margin-bottom: 20px; }
+  .phase h3 { font-size: 30px; margin-bottom: 18px; color: var(--field-ink); }
+  .phase p { font-family: var(--serif); font-size: 17px; line-height: 1.6; color: var(--field-mute); }
+  .approach-foot {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--field-rule);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 32px;
     flex-wrap: wrap;
-    gap: 24px;
   }
-  footer .copyright {
-    font-size: 13px;
-    color: var(--ink-mute);
-    letter-spacing: 0.15em;
+  .approach-foot p { font-family: var(--serif); font-size: 19px; color: var(--field-ink); max-width: 46ch; }
+
+  /* ---- Industries ---- */
+  .industries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px 40px;
   }
-  footer .socials {
-    display: flex;
-    gap: 28px;
+  .industry .media { margin-bottom: 20px; }
+  .industry .meta { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start; }
+  .industry .label { margin-bottom: 8px; }
+  .industry h3 { margin-bottom: 10px; }
+  .industry p { font-family: var(--serif); font-size: 17px; line-height: 1.55; color: var(--ink-2); max-width: 48ch; }
+  .industry .idx { font-size: 13px; color: var(--ink-3); padding-top: 26px; }
+  .industries-cta { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--rule-strong); }
+
+  /* ---- Results ---- */
+  .results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 64px;
+    border-top: 1px solid var(--rule-strong);
   }
-  footer .socials a {
-    color: var(--ink-soft);
-    text-decoration: none;
-    font-size: 13px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    transition: color 0.3s;
+  .result { padding: 40px 0 48px; border-bottom: 1px solid var(--rule); }
+  .result .label { margin-bottom: 16px; }
+  .result h3 { font-size: 24px; margin-bottom: 24px; max-width: 26ch; }
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid var(--rule); }
+  .metric .val { font-size: clamp(36px, 3.4vw, 48px); font-weight: 600; letter-spacing: -0.03em; line-height: 1; }
+  .metric .key { font-size: 13px; color: var(--ink-3); margin-top: 8px; line-height: 1.35; }
+
+  /* ---- Team ---- */
+  .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
   }
-  footer .socials a:hover { color: var(--gold); }
-
-  /* MOBILE NAV */
-  .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    position: relative;
-    z-index: 51;
-    padding: 0;
+  .member { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 32px; align-items: start; }
+  .member .media { aspect-ratio: 4 / 5; }
+  .member .media img { object-position: center 20%; }
+  .member .label { margin-bottom: 10px; }
+  .member h3 { font-size: 30px; margin-bottom: 4px; }
+  .member .role { font-family: var(--serif); font-size: 17px; color: var(--ink-2); margin-bottom: 20px; }
+  .member p.bio { font-family: var(--serif); font-size: 16px; line-height: 1.6; color: var(--ink-2); }
+  .member .focus { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-3); line-height: 1.6; }
+  .member .focus strong { color: var(--ink-2); font-weight: 500; }
+  .team-note {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule-strong);
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 48px;
   }
-  .nav-toggle span {
-    display: block;
-    position: absolute;
-    left: 8px;
-    right: 8px;
-    height: 1px;
-    background: var(--gold);
-    transition: transform 0.3s, opacity 0.3s, top 0.3s;
+  .team-note p { font-family: var(--serif); font-size: 19px; color: var(--ink-2); max-width: 50ch; }
+
+  /* ---- Insights ---- */
+  .insight {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr) 120px 24px;
+    gap: 32px;
+    align-items: center;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+    transition: background-color 200ms var(--ease-out);
   }
-  .nav-toggle span:nth-child(1) { top: 14px; }
-  .nav-toggle span:nth-child(2) { top: 20px; }
-  .nav-toggle span:nth-child(3) { top: 26px; }
-  .nav-toggle.open span:nth-child(1) { top: 20px; transform: rotate(45deg); }
-  .nav-toggle.open span:nth-child(2) { opacity: 0; }
-  .nav-toggle.open span:nth-child(3) { top: 20px; transform: rotate(-45deg); }
+  .insight h3 { font-size: 22px; }
+  .insight .date { font-size: 13px; color: var(--ink-3); text-align: right; }
+  .insight svg { width: 18px; height: 18px; stroke: var(--ink); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; transition: transform 240ms var(--ease-out); }
+  @media (hover: hover) and (pointer: fine) {
+    .insight:hover h3 { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+    .insight:hover svg { transform: translate(3px, -3px); }
+  }
 
-  /* RESPONSIVE — TABLET */
-  @media (max-width: 900px) {
-    nav { padding: 18px 24px; }
-    .nav-toggle { display: block; }
+  /* ---- Contact ---- */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: 64px;
+    align-items: start;
+  }
+  .contact-grid h2 { max-width: 12ch; margin-bottom: 32px; }
+  .contact-grid .lead { max-width: 40ch; margin-bottom: 40px; }
+  .directory { border-top: 1px solid var(--field-rule); }
+  .person { padding: 28px 0; border-bottom: 1px solid var(--field-rule); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
+  .person h4 { font-size: 20px; color: var(--field-ink); margin-bottom: 4px; }
+  .person .role { font-family: var(--serif); font-size: 15px; color: var(--field-mute); }
+  .person a { display: block; font-size: 15px; color: var(--field-ink); padding: 2px 0; transition: color 160ms var(--ease-out); }
+  .person a + a { margin-top: 6px; }
+  @media (hover: hover) and (pointer: fine) { .person a:hover { color: #ffffff; text-decoration: underline; text-underline-offset: 3px; } }
 
-    .nav-links {
-      position: fixed;
-      top: 0; right: 0;
-      height: 100vh;
-      width: 100%;
-      max-width: 360px;
-      background: var(--bg);
-      border-left: 1px solid var(--line);
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 80px 40px;
-      gap: 28px;
-      transform: translateX(100%);
-      transition: transform 0.4s ease;
-      z-index: 50;
-    }
-    .nav-links.open { transform: translateX(0); }
-    .nav-links li { width: 100%; }
-    .nav-links a {
-      font-size: 14px;
-      letter-spacing: 0.2em;
-      display: block;
-      padding: 8px 0;
-    }
-    .nav-cta {
-      margin-top: 16px;
-      text-align: center;
-    }
-    .dropdown-menu {
-      position: static;
-      opacity: 1;
-      visibility: visible;
-      transform: none;
-      background: none;
-      border: none;
-      padding: 0 0 0 18px;
-      min-width: 0;
-    }
-    .dropdown-menu li a { font-size: 13px; color: var(--ink-mute); }
-    .dropdown .caret { display: none; }
-
-    section { padding: 80px 24px; }
-
-    .hero { padding: 100px 24px 80px; min-height: auto; }
-    .hero-content { grid-template-columns: 1fr; gap: 40px; }
-    .hero h1 { font-size: clamp(44px, 11vw, 72px); }
-    .hero-tag { font-size: 17px; max-width: 100%; margin-top: 28px; }
-    .hero-side { text-align: left; }
-    .scroll-indicator { display: none; }
-
-    .marquee { padding: 20px 0; }
-    .marquee-item { font-size: 18px; gap: 50px; }
-    .marquee-track { gap: 50px; animation-duration: 50s; }
-
-    .section-header { grid-template-columns: 1fr; gap: 20px; margin-bottom: 50px; }
-    .section-title { font-size: clamp(40px, 7.5vw, 56px); }
-
-    /* Services */
+  /* ---- Responsive ---- */
+  @media (max-width: 1100px) {
     .services-grid { grid-template-columns: 1fr; }
-    .service { padding: 36px 24px; min-height: auto; }
-    .service-title { font-size: 30px; }
-    .service-desc { font-size: 17px; line-height: 1.65; }
-    .service-num { font-size: 18px; }
-    .service-arrow { top: 36px; right: 24px; width: 20px; height: 20px; }
-
-    /* Approach */
-    .approach-grid { grid-template-columns: 1fr; }
-    .approach-step { border-right: none; border-bottom: 1px solid var(--line); padding: 36px 0 !important; }
-    .approach-step:last-child { border-bottom: none; }
-    .approach-num { font-size: 64px; margin-bottom: 18px; }
-    .approach-step h3 { font-size: 26px; }
-    .approach-step p { font-size: 17px; }
-
-    /* Work */
-    .work-grid { grid-template-columns: 1fr; gap: 24px; }
-    .work-video-vertical-wrap { padding: 16px; }
-    .work-video.vertical { max-width: 280px; }
-    .work-meta { padding: 22px 24px 26px; }
-    .work-meta h4 { font-size: 22px; }
-    .work-loop-label { bottom: 16px; left: 18px; font-size: 12px; }
-    .work-meta p { font-size: 15px; }
-    .work-cta { margin-top: 50px; }
-
-    /* Team */
-    .team-grid { grid-template-columns: 1fr; gap: 24px; }
-    .team-intro { margin-bottom: 50px; }
-    .team-intro p { font-size: 15px; }
-    .member-body { padding: 28px 24px 32px; }
-    .member h3 { font-size: 32px; }
-    .member-title { font-size: 16px; }
-    .member-bio { font-size: 15px; }
-    .member-monogram { font-size: 100px; }
-
-    /* Contact */
-    .contact { padding: 90px 24px; }
-    .contact-cards { grid-template-columns: 1fr; gap: 14px; max-width: 100%; }
-    .contact-card { padding: 26px 22px; }
-    .contact-card .name { font-size: 22px; margin-bottom: 18px; }
-    .contact-card a { font-size: 15px; }
-
-    /* Buttons — bigger touch targets */
-    .btn { padding: 16px 28px; font-size: 12px; }
-
-    footer { padding: 36px 24px 28px; flex-direction: column; text-align: center; gap: 18px; }
-    footer .socials { gap: 22px; flex-wrap: wrap; justify-content: center; }
+    .team { grid-template-columns: 1fr; gap: 48px; }
+    .results { grid-template-columns: 1fr; }
   }
-
-  /* RESPONSIVE — SMALL PHONES */
+  @media (max-width: 900px) {
+    .hero-lockup { padding-bottom: 200px; }
+    .hero-lockup .mark-svg { width: min(64vw, 320px); }
+    .hero-lockup .rule { margin: 28px 0 20px; }
+    .hero-lockup .slogan { font-size: 12px; letter-spacing: 0.26em; }
+    .hero-foot { grid-template-columns: 1fr; gap: 20px; padding-bottom: 28px; }
+    .hero-actions { justify-content: flex-start; }
+    .intro-grid { grid-template-columns: 1fr; gap: 24px; }
+    .intro-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; margin-top: 40px; }
+    .service { grid-template-columns: 1fr; gap: 10px; padding: 28px 0 32px; }
+    .service .label { padding-top: 0; }
+    .phases { grid-template-columns: 1fr; gap: 40px; }
+    .approach-foot { margin-top: 56px; }
+    .industries { grid-template-columns: 1fr; gap: 48px; }
+    .member { grid-template-columns: 1fr; gap: 24px; }
+    .member .media { max-width: 320px; }
+    .team-note { grid-template-columns: 1fr; gap: 16px; margin-top: 56px; }
+    .insight { grid-template-columns: 1fr 24px; gap: 8px 16px; padding: 22px 0; }
+    .insight .label { grid-column: 1; }
+    .insight h3 { grid-column: 1; font-size: 20px; }
+    .insight .date { grid-column: 1; text-align: left; }
+    .insight svg { grid-column: 2; grid-row: 1 / span 3; align-self: center; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .contact-grid h2 { max-width: none; }
+    .person { grid-template-columns: 1fr; gap: 12px; }
+    .metrics { gap: 16px; }
+  }
   @media (max-width: 480px) {
-    nav { padding: 14px 18px; }
-    .logo { font-size: 24px; }
-
-    section { padding: 64px 18px; }
-
-    .hero { padding: 90px 18px 60px; }
-    .hero h1 { font-size: clamp(40px, 12vw, 60px); }
-    .hero-meta span { font-size: 13px; letter-spacing: 0.22em; }
-    .hero-tag { font-size: 16px; line-height: 1.6; }
-
-    .marquee-item { font-size: 16px; gap: 40px; }
-    .marquee-track { gap: 40px; }
-
-    .section-title { font-size: clamp(34px, 8.5vw, 46px); }
-    .section-label { font-size: 15px; }
-
-    .service { padding: 32px 20px; }
-    .service-num { font-size: 17px; }
-    .service-title { font-size: 26px; }
-    .service-desc { font-size: 16px; line-height: 1.65; }
-    .service-arrow { top: 32px; right: 20px; width: 18px; height: 18px; }
-
-    .approach-num { font-size: 52px; }
-    .approach-step h3 { font-size: 23px; }
-    .approach-step p { font-size: 16px; }
-
-    .work-video-vertical-wrap { padding: 12px; }
-    .work-video.vertical { max-width: 100%; }
-    .work-meta { padding: 18px 20px 22px; }
-    .work-meta h4 { font-size: 20px; }
-
-    .team-intro p { font-size: 15px; }
-    .member-body { padding: 24px 20px 28px; }
-    .member h3 { font-size: 28px; }
-    .member-monogram { font-size: 80px; }
-
-    .contact { padding: 72px 18px; }
-    .contact-card { padding: 22px 18px; }
-    .contact-card .name { font-size: 20px; }
-
-    .btn { padding: 14px 24px; font-size: 11px; letter-spacing: 0.22em; }
-
-    footer { padding: 28px 18px 22px; }
-    footer .copyright { font-size: 11px; }
-    footer .socials a { font-size: 11px; letter-spacing: 0.2em; }
+    .metrics { grid-template-columns: 1fr 1fr; }
+    .hero-actions .btn { width: 100%; justify-content: center; }
   }
-
-  /* PERFORMANCE — disable services bg video on small screens
-     to save battery, data, and rendering cost. Poster image still shows. */
-  @media (max-width: 768px) {
-    /* Videos now play on mobile — keep them visible */
-    .services-bg-video {
-      display: block;
-    }
-    /* Slightly stronger overlay on mobile for text legibility over video */
-    .services-bg-overlay {
-      background:
-        radial-gradient(ellipse at 50% 30%, rgba(15,20,25,0.4) 0%, rgba(15,20,25,0.85) 80%),
-        linear-gradient(180deg, rgba(15,20,25,0.92) 0%, rgba(15,20,25,0.98) 100%);
-      opacity: 0.95;
-    }
-    /* Work-section loops also play on mobile */
-    .work-loop video {
-      display: block;
-    }
-  }
-
-  /* Respect users who prefer reduced motion */
   @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
-    .services-bg-video { display: none; }
-    .marquee-track { animation: none; }
+    .js .hero-lockup .mark-svg, .js .hero-lockup .rule, .js .hero-lockup .slogan, .js .hero-foot, .js .hero-video { opacity: 1; transform: none; animation: none; }
   }
 </style>
 </head>
 <body>
+<!--
+  DIRECTION CONTRACT
+  THESIS: BRG is a growth consultancy that owns a production company, so the site reads like a firm's printed prospectus: typographic, structured, evidence-led. It refuses the dark-gold "creative agency" mood page with italic serif, glow dots, and marquees.
+  OWN-WORLD: Warm paper ground, ink type, a single deep-marine field color for the sections that carry weight, one brass square as the mark. Archivo for headings and interface, Source Serif 4 for reading. Hairline rules and ledger rows instead of cards. Flat color only.
+  STORY: A serious buyer lands, understands within seconds that BRG diagnoses before it produces, sees real footage and real numbers, meets the two operators, and books a call.
+  FIRST VIEWPORT: Three-line headline at 92px on the left, the offer and two actions on the right, a fact line beneath, then the yacht footage full-width at 21:9. Primary action: Book a call.
+  FORM: Prospectus / annual-report typography, the top-ranked grounded direction. Code-led build, no seed script available in this environment.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+<a class="skip" href="#main">Skip to content</a>
 
-<nav>
-  <div class="logo">BRG</div>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#approach">Approach</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#team">Team</a></li>
-    <li class="dropdown">
-      <a href="/blog" class="dropdown-trigger">Resources<span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="/blog">Articles</a></li>
-        <li><a href="/work">Case Studies</a></li>
-      </ul>
-    </li>
-    <li><a href="https://calendly.com/trevorbragg9/30min" target="_blank" rel="noopener" class="nav-cta">Start a Project</a></li>
-  </ul>
-</nav>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="BRG Creative Group home"><svg class="brand-mark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.6 107.1" fill="currentColor" fill-rule="evenodd"><path d="M396.44 106.99C395.48 106.94 393.25 106.84 391.50 106.77C388.06 106.62 386.14 106.48 383.50 106.19C382.57 106.09 381.05 105.95 380.11 105.88C379.18 105.81 377.99 105.68 377.49 105.57C375.74 105.22 375.06 105.12 373.79 104.99C373.09 104.93 372.15 104.76 371.71 104.62C371.26 104.48 370.46 104.32 369.92 104.25C368.99 104.13 368.36 104.01 365.19 103.31C364.43 103.14 363.27 102.92 362.60 102.82C361.93 102.71 361.01 102.49 360.56 102.32C360.11 102.15 359.45 101.97 359.09 101.93C358.73 101.88 358.04 101.69 357.56 101.50C357.08 101.31 356.49 101.12 356.25 101.07C355.66 100.95 353.14 100.17 352.06 99.78C351.58 99.61 350.68 99.28 350.06 99.07C349.44 98.85 348.71 98.55 348.44 98.41C348.16 98.27 347.68 98.08 347.37 98.00C347.07 97.92 346.59 97.73 346.31 97.57C346.04 97.41 345.67 97.24 345.50 97.19C345.18 97.10 343.78 96.48 341.77 95.54C341.12 95.25 340.57 95.00 340.53 95.00C340.49 95.00 340.18 94.82 339.83 94.59C339.49 94.37 338.93 94.05 338.60 93.88C338.02 93.58 336.70 92.80 334.19 91.28C333.57 90.90 332.90 90.50 332.70 90.39C329.33 88.50 325.40 84.90 320.78 79.47C319.75 78.26 317.84 75.50 317.60 74.88C317.54 74.71 317.36 74.39 317.20 74.19C316.58 73.36 315.08 70.25 314.61 68.79C314.46 68.32 314.20 67.60 314.03 67.19C313.86 66.78 313.65 65.97 313.54 65.39C313.44 64.81 313.25 64.05 313.11 63.70C312.97 63.34 312.73 62.03 312.56 60.69C312.39 59.38 312.16 57.67 312.05 56.88C311.81 55.22 311.87 52.33 312.18 49.81C312.28 48.99 312.46 47.44 312.57 46.38C312.71 45.13 312.88 44.17 313.07 43.68C313.22 43.26 313.44 42.49 313.55 41.96C313.65 41.44 313.88 40.67 314.06 40.26C314.23 39.85 314.51 39.10 314.68 38.60C315.01 37.58 315.55 36.35 316.19 35.11C316.43 34.65 316.62 34.20 316.62 34.10C316.62 34.00 316.86 33.55 317.16 33.09C317.45 32.64 318.09 31.63 318.59 30.85C319.09 30.07 319.73 29.14 320.03 28.79C320.32 28.43 320.90 27.73 321.31 27.23C322.52 25.76 326.56 21.70 328.12 20.39C329.74 19.03 331.91 17.41 332.75 16.93C333.06 16.76 333.73 16.34 334.25 16.00C334.77 15.67 335.81 15.04 336.56 14.62C337.32 14.19 338.25 13.65 338.64 13.42C339.03 13.19 339.43 13.00 339.52 13.00C339.62 13.00 339.95 12.84 340.26 12.65C340.95 12.21 344.89 10.28 346.06 9.80C346.54 9.61 347.05 9.38 347.19 9.30C347.32 9.21 347.74 9.06 348.10 8.95C348.47 8.84 348.95 8.65 349.17 8.51C349.38 8.38 349.90 8.17 350.31 8.06C350.73 7.94 351.34 7.71 351.69 7.56C352.47 7.20 356.08 6.06 357.00 5.87C357.38 5.79 358.06 5.59 358.51 5.43C358.96 5.26 359.81 5.04 360.40 4.95C360.98 4.85 361.85 4.64 362.33 4.47C362.80 4.30 363.54 4.12 363.98 4.07C364.42 4.02 365.25 3.85 365.83 3.68C366.41 3.51 367.40 3.29 368.03 3.20C369.67 2.94 372.83 2.41 374.38 2.12C375.10 1.99 376.26 1.83 376.95 1.76C377.64 1.69 378.29 1.60 378.39 1.57C378.84 1.40 381.25 1.10 383.00 1.00C384.07 0.94 385.87 0.78 387.00 0.65C390.92 0.18 391.97 0.13 399.50 0.07C409.88 -0.02 416.73 0.21 419.62 0.74C420.00 0.81 421.35 0.93 422.62 0.99C423.90 1.06 425.58 1.23 426.38 1.37C427.17 1.51 428.57 1.68 429.50 1.75C430.43 1.83 431.67 1.99 432.25 2.13C432.83 2.26 433.76 2.42 434.31 2.49C434.86 2.56 435.79 2.72 436.38 2.86C436.96 3.00 437.97 3.17 438.62 3.24C439.28 3.32 440.09 3.46 440.44 3.57C440.78 3.68 441.77 3.87 442.62 3.99C443.48 4.12 444.48 4.34 444.84 4.48C445.20 4.63 446.02 4.81 446.65 4.88C447.29 4.96 448.12 5.14 448.50 5.28C448.88 5.42 449.78 5.66 450.50 5.83C451.22 5.99 452.29 6.26 452.88 6.43C453.46 6.60 454.36 6.86 454.88 7.00C456.08 7.35 456.31 7.42 457.06 7.73C457.41 7.87 457.87 8.05 458.10 8.13C458.32 8.22 458.56 8.38 458.62 8.50C458.69 8.62 458.75 10.78 458.76 13.30C458.78 17.59 458.76 17.90 458.55 18.14C458.27 18.44 457.80 18.41 456.75 18.03C456.37 17.89 455.25 17.50 454.25 17.17C453.25 16.84 451.73 16.33 450.88 16.03C450.02 15.73 448.75 15.32 448.06 15.13C447.38 14.93 446.66 14.71 446.48 14.64C446.30 14.57 445.29 14.31 444.23 14.06C443.18 13.82 441.98 13.50 441.56 13.37C441.15 13.24 440.31 13.05 439.70 12.94C439.09 12.84 438.24 12.64 437.82 12.51C437.39 12.38 436.40 12.18 435.61 12.06C434.83 11.95 433.68 11.74 433.06 11.61C432.44 11.48 431.54 11.31 431.06 11.24C430.58 11.17 429.62 11.01 428.94 10.88C428.25 10.75 427.38 10.60 427.00 10.56C426.62 10.52 425.52 10.37 424.56 10.23C421.73 9.82 421.13 9.76 419.86 9.76C419.20 9.75 418.36 9.69 417.99 9.62C415.37 9.13 413.79 9.06 403.81 9.06C394.06 9.06 394.06 9.06 391.19 9.40C389.61 9.58 387.86 9.77 387.31 9.81C386.76 9.86 385.69 10.00 384.94 10.13C384.18 10.26 383.03 10.44 382.38 10.55C380.60 10.82 378.25 11.33 377.49 11.61C377.12 11.74 376.50 11.92 376.12 12.00C375.75 12.08 374.93 12.31 374.31 12.50C373.69 12.70 372.85 12.94 372.44 13.04C371.34 13.31 368.91 14.16 368.17 14.54C367.82 14.72 367.27 14.93 366.94 15.01C366.62 15.09 365.61 15.54 364.70 16.00C363.80 16.46 362.91 16.89 362.74 16.94C362.41 17.04 360.61 18.07 359.50 18.78C359.12 19.03 358.48 19.44 358.06 19.70C356.75 20.53 354.93 21.88 353.38 23.18C351.43 24.81 351.03 25.19 349.57 26.73C347.72 28.69 345.39 31.55 344.54 32.92C343.72 34.25 341.75 37.99 341.75 38.23C341.75 38.30 341.50 39.03 341.20 39.84C340.90 40.65 340.59 41.62 340.51 42.00C340.44 42.38 340.24 43.14 340.07 43.69C339.38 45.93 338.91 49.21 338.80 52.44C338.71 55.06 338.99 59.23 339.31 60.12C339.42 60.42 339.57 61.24 339.64 61.93C339.72 62.62 339.91 63.55 340.06 64.00C340.22 64.45 340.42 65.12 340.50 65.50C340.59 65.88 340.84 66.64 341.06 67.19C341.29 67.74 341.51 68.33 341.56 68.50C341.66 68.86 342.67 71.14 342.97 71.69C343.08 71.89 343.35 72.40 343.56 72.81C344.28 74.19 344.83 74.99 346.49 77.06C348.64 79.74 350.75 81.90 353.45 84.20C354.89 85.42 356.50 86.61 357.15 86.95C357.38 87.06 357.79 87.31 358.06 87.50C358.53 87.82 360.02 88.65 362.56 90.02C364.19 90.89 366.36 91.94 366.94 92.13C367.21 92.22 367.83 92.48 368.31 92.71C368.79 92.94 369.34 93.12 369.54 93.12C369.74 93.12 370.18 93.27 370.52 93.44C370.86 93.61 371.51 93.83 371.95 93.94C372.39 94.04 372.98 94.24 373.26 94.38C373.54 94.52 374.23 94.75 374.79 94.88C376.39 95.25 377.86 95.62 378.81 95.88C379.29 96.02 380.14 96.18 380.69 96.25C381.24 96.31 382.02 96.48 382.43 96.62C382.89 96.78 383.79 96.93 384.75 97.01C386.38 97.14 387.43 97.27 389.31 97.58C390.42 97.76 393.01 97.91 398.50 98.11C401.30 98.22 408.18 98.12 414.80 97.87C417.48 97.77 418.54 97.69 419.42 97.49C420.05 97.35 421.63 97.16 422.94 97.07C424.46 96.96 425.81 96.79 426.69 96.59C427.44 96.42 428.51 96.24 429.06 96.19C429.61 96.15 430.54 96.01 431.12 95.88C431.71 95.75 432.50 95.61 432.88 95.56C433.25 95.52 434.10 95.35 434.75 95.19C435.40 95.03 436.30 94.87 436.75 94.83C437.20 94.79 437.93 94.63 438.38 94.46C438.83 94.29 439.54 94.08 439.96 94.00C441.38 93.72 441.22 95.70 441.32 77.06C441.40 60.88 441.40 60.81 441.15 60.50C440.90 60.19 440.90 60.19 437.23 60.11C435.21 60.06 429.42 60.02 424.35 60.01C415.14 60.00 415.14 60.00 414.79 59.70C414.44 59.40 414.44 59.40 414.40 56.54C414.36 53.39 414.45 52.82 415.00 52.54C415.24 52.42 419.65 52.38 435.44 52.38C446.51 52.38 457.36 52.34 459.56 52.30C462.37 52.24 463.67 52.26 463.91 52.36C464.67 52.66 464.62 51.38 464.62 74.62C464.62 97.87 464.67 96.58 463.91 96.89C463.72 96.97 463.14 97.22 462.62 97.44C462.11 97.67 461.35 97.96 460.94 98.10C460.52 98.23 459.85 98.46 459.44 98.60C458.48 98.92 455.19 99.85 454.12 100.09C453.68 100.19 452.86 100.41 452.30 100.58C451.74 100.75 450.70 100.99 449.98 101.12C449.27 101.25 448.38 101.47 448.00 101.60C447.62 101.74 446.98 101.88 446.56 101.93C446.15 101.97 445.28 102.17 444.62 102.37C443.97 102.57 442.37 102.90 441.06 103.12C439.76 103.34 438.12 103.65 437.44 103.81C436.75 103.97 435.62 104.14 434.94 104.19C434.20 104.24 433.29 104.40 432.73 104.58C432.09 104.78 431.22 104.92 430.10 105.00C428.72 105.11 426.50 105.43 425.44 105.69C425.30 105.73 424.12 105.81 422.81 105.87C421.51 105.94 420.13 106.05 419.75 106.13C418.80 106.32 414.42 106.65 410.12 106.86C406.86 107.02 398.72 107.10 396.44 106.99ZM315.70 105.78C315.65 105.73 308.84 105.66 300.58 105.62C283.70 105.55 285.56 105.67 283.95 104.58C283.52 104.30 282.79 103.82 282.31 103.52C279.75 101.94 276.61 99.86 276.06 99.37C275.93 99.25 275.64 99.06 275.44 98.95C275.23 98.84 274.69 98.48 274.23 98.15C272.93 97.22 271.80 96.45 270.25 95.41C266.12 92.66 263.49 90.92 262.88 90.54C261.48 89.66 258.68 87.85 258.38 87.62C258.20 87.49 257.78 87.21 257.44 87.00C257.09 86.79 256.50 86.39 256.12 86.12C255.25 85.48 253.47 84.26 252.96 83.94C252.74 83.81 252.08 83.36 251.50 82.94C249.89 81.80 245.67 79.00 245.55 79.00C245.49 79.00 245.12 78.79 244.72 78.53C244.33 78.27 243.64 77.84 243.19 77.56C242.10 76.90 238.17 74.30 237.00 73.47C236.83 73.34 236.07 72.84 235.33 72.34C234.58 71.84 233.88 71.38 233.78 71.31C233.67 71.24 233.13 70.89 232.58 70.54C232.02 70.18 231.31 69.71 231.00 69.50C230.69 69.29 229.96 68.81 229.38 68.44C228.17 67.66 227.37 67.12 226.59 66.55C226.30 66.34 225.83 66.04 225.54 65.90C225.25 65.75 224.98 65.57 224.94 65.51C224.90 65.44 224.58 65.21 224.22 65.00C223.12 64.34 219.25 61.75 217.39 60.43C216.96 60.12 216.96 60.12 213.39 60.12C209.38 60.12 207.13 60.00 204.49 59.63C203.50 59.49 201.93 59.32 201.00 59.25C194.86 58.79 190.87 58.16 189.19 57.37C186.88 56.30 185.92 55.84 185.69 55.71C185.07 55.37 183.14 54.31 182.69 54.07C182.41 53.93 181.91 53.63 181.57 53.40C181.23 53.18 180.86 53.00 180.75 53.00C180.63 53.00 180.14 52.73 179.65 52.41C178.75 51.82 178.51 51.41 178.90 51.17C178.98 51.12 192.57 51.06 209.10 51.04C225.63 51.02 239.20 50.97 239.25 50.93C239.31 50.90 240.50 50.82 241.90 50.75C243.29 50.68 245.06 50.51 245.81 50.38C246.57 50.24 247.87 50.05 248.71 49.94C249.57 49.83 250.73 49.58 251.36 49.37C251.99 49.17 252.65 49.00 252.84 49.00C253.03 49.00 253.58 48.85 254.06 48.68C254.54 48.50 255.39 48.23 255.94 48.07C256.49 47.91 257.25 47.65 257.62 47.50C258.00 47.35 258.63 47.12 259.02 46.99C260.26 46.59 263.44 44.94 264.06 44.38C264.20 44.26 264.45 44.08 264.62 44.00C265.99 43.30 268.81 40.52 269.63 39.06C269.76 38.83 270.01 38.42 270.18 38.16C270.53 37.62 271.31 35.75 271.51 34.96C271.83 33.67 271.95 31.11 271.79 29.10C271.64 27.23 271.60 27.06 271.02 25.54C270.18 23.35 269.46 22.22 267.62 20.21C266.99 19.52 264.15 17.32 262.98 16.61C261.30 15.60 258.33 14.25 257.11 13.94C256.67 13.83 255.74 13.54 255.05 13.31C254.36 13.07 253.67 12.87 253.53 12.87C253.39 12.87 252.75 12.71 252.11 12.52C251.46 12.32 250.63 12.12 250.25 12.07C249.87 12.02 248.97 11.82 248.25 11.62C247.42 11.39 246.36 11.21 245.38 11.13C244.52 11.06 243.47 10.95 243.06 10.88C240.99 10.53 236.76 10.49 202.69 10.46C167.56 10.44 167.56 10.44 166.89 10.09C166.52 9.90 166.06 9.62 165.86 9.47C165.18 8.93 163.98 8.14 161.54 6.62C161.15 6.38 160.40 5.91 159.87 5.56C159.34 5.22 158.74 4.84 158.55 4.72C158.35 4.60 157.79 4.25 157.31 3.94C156.83 3.63 156.09 3.21 155.67 3.01C155.24 2.81 154.84 2.54 154.76 2.40C154.58 2.05 154.59 1.56 154.78 1.41C154.88 1.33 170.05 1.30 198.12 1.31C237.44 1.34 241.41 1.36 242.44 1.55C243.16 1.68 244.95 1.80 247.44 1.88C251.28 2.01 253.84 2.20 256.38 2.56C257.10 2.66 258.95 2.89 260.50 3.06C262.05 3.24 263.85 3.49 264.50 3.63C265.15 3.76 266.26 3.96 266.95 4.06C267.64 4.16 268.51 4.35 268.87 4.50C269.23 4.64 269.95 4.81 270.48 4.89C271.01 4.96 271.83 5.16 272.31 5.33C272.79 5.50 273.61 5.75 274.12 5.87C275.16 6.13 277.87 7.12 278.75 7.56C279.06 7.71 279.54 7.91 279.81 8.00C280.09 8.09 280.62 8.32 281.00 8.51C281.38 8.71 282.00 9.01 282.38 9.18C283.82 9.85 285.81 10.97 287.15 11.89C287.65 12.23 288.29 12.66 288.56 12.85C290.37 14.06 293.46 17.06 294.90 19.01C295.55 19.89 296.53 21.66 296.81 22.48C296.97 22.94 297.22 23.59 297.37 23.92C297.97 25.32 298.46 30.73 298.13 32.19C298.06 32.46 297.95 33.22 297.87 33.87C297.77 34.65 297.52 35.64 297.13 36.81C296.16 39.62 295.08 41.31 292.69 43.70C290.36 46.04 288.18 47.68 285.67 49.00C285.32 49.18 284.87 49.45 284.67 49.59C284.34 49.83 283.86 50.06 280.94 51.44C280.32 51.73 279.51 52.07 279.13 52.19C278.76 52.31 278.28 52.51 278.07 52.63C277.86 52.75 277.35 52.92 276.94 53.00C276.52 53.09 275.88 53.31 275.50 53.50C275.12 53.69 274.60 53.88 274.34 53.93C274.08 53.97 273.63 54.12 273.34 54.24C272.79 54.48 270.10 55.16 269.12 55.31C268.82 55.36 268.14 55.53 267.62 55.70C267.11 55.86 266.22 56.05 265.65 56.12C265.08 56.19 264.16 56.38 263.59 56.55C263.03 56.73 261.97 56.92 261.24 57.00C260.51 57.07 259.53 57.21 259.05 57.30C256.74 57.77 256.22 57.85 255.06 57.93C254.38 57.97 252.83 58.12 251.62 58.25C250.42 58.39 249.13 58.51 248.76 58.53C247.58 58.59 247.54 59.41 248.69 60.01C249.03 60.18 249.73 60.60 250.24 60.94C250.75 61.28 251.50 61.77 251.90 62.03C252.80 62.61 253.89 63.31 254.70 63.83C255.04 64.05 255.48 64.35 255.69 64.49C256.05 64.75 257.27 65.53 258.91 66.55C259.34 66.82 259.91 67.20 260.19 67.40C260.46 67.59 261.15 68.05 261.71 68.41C264.25 70.03 266.38 71.45 267.12 72.01C267.57 72.34 268.15 72.73 268.40 72.87C268.66 73.01 269.20 73.34 269.61 73.60C270.02 73.85 270.51 74.16 270.70 74.28C270.90 74.39 271.69 74.90 272.45 75.40C274.30 76.62 274.86 76.98 276.17 77.84C276.78 78.24 277.58 78.76 277.94 79.00C278.30 79.24 278.87 79.62 279.20 79.84C279.54 80.06 280.07 80.42 280.38 80.63C280.68 80.85 281.49 81.37 282.17 81.79C283.59 82.69 284.39 83.21 285.58 84.03C286.05 84.35 286.92 84.94 287.52 85.34C288.11 85.74 288.68 86.12 288.78 86.19C289.26 86.53 293.21 89.11 293.78 89.47C295.25 90.38 296.59 91.26 297.07 91.62C297.36 91.83 297.64 92.00 297.70 92.00C297.76 92.00 297.95 92.12 298.12 92.26C298.30 92.40 298.92 92.82 299.50 93.21C300.08 93.59 301.11 94.28 301.78 94.74C302.44 95.19 303.29 95.76 303.66 96.00C304.39 96.47 305.42 97.16 306.12 97.66C306.90 98.20 309.12 99.68 309.57 99.95C309.80 100.09 310.12 100.32 310.28 100.45C310.44 100.59 310.98 101.00 311.50 101.36C312.02 101.71 312.63 102.14 312.88 102.31C314.12 103.18 314.75 103.58 315.41 103.91C316.35 104.38 316.81 105.09 316.47 105.53C316.28 105.76 315.83 105.92 315.70 105.78ZM29.33 105.62C0.73 105.56 0.73 105.56 0.36 105.15C-0.00 104.75 -0.00 104.75 -0.00 53.44C-0.00 2.14 -0.00 2.14 0.28 1.81C0.44 1.63 0.76 1.44 1.00 1.39C1.74 1.23 82.34 1.31 83.94 1.48C84.69 1.55 87.31 1.71 89.75 1.81C92.19 1.92 94.67 2.06 95.25 2.13C96.37 2.26 97.90 2.41 100.19 2.62C102.56 2.84 103.73 2.99 106.44 3.45C107.88 3.70 109.48 3.95 110.00 4.02C110.52 4.09 111.58 4.31 112.38 4.50C113.17 4.69 114.07 4.89 114.38 4.94C114.68 4.99 115.44 5.18 116.06 5.38C116.68 5.57 117.81 5.91 118.56 6.13C121.51 7.00 123.76 7.80 125.06 8.43C125.41 8.60 126.45 9.11 127.38 9.56C132.38 11.99 135.73 14.44 137.73 17.12C139.95 20.10 140.44 21.21 140.99 24.47C141.68 28.50 140.93 33.10 139.19 35.43C138.98 35.71 138.72 36.08 138.61 36.25C138.18 36.92 136.17 39.06 135.29 39.79C133.32 41.41 131.45 42.61 129.38 43.58C128.45 44.02 127.47 44.49 127.21 44.63C126.94 44.78 126.41 45.00 126.03 45.14C125.65 45.27 125.27 45.43 125.18 45.50C125.10 45.57 124.58 45.80 124.04 45.99C123.50 46.19 122.55 46.55 121.93 46.79C120.50 47.35 118.28 47.96 116.75 48.20C115.44 48.41 114.79 48.73 114.67 49.22C114.56 49.65 114.99 50.00 115.61 50.00C115.86 50.00 116.54 50.12 117.11 50.25C117.69 50.39 118.73 50.59 119.43 50.70C120.12 50.80 121.00 50.96 121.38 51.06C121.75 51.16 122.51 51.29 123.05 51.37C123.60 51.44 124.49 51.64 125.03 51.81C125.57 51.99 126.15 52.12 126.33 52.12C126.50 52.12 127.08 52.27 127.60 52.45C128.13 52.63 128.98 52.88 129.48 53.01C129.99 53.14 130.58 53.35 130.80 53.49C131.01 53.62 131.44 53.76 131.75 53.81C132.06 53.86 132.82 54.09 133.44 54.32C134.06 54.55 134.96 54.86 135.44 55.01C136.60 55.37 139.05 56.43 140.69 57.28C140.96 57.42 141.61 57.76 142.12 58.03C144.01 59.01 145.32 59.83 146.93 61.05C148.20 62.01 151.26 64.99 151.97 65.96C152.82 67.11 153.61 68.38 153.76 68.85C153.84 69.10 154.01 69.47 154.14 69.68C154.26 69.89 154.57 70.91 154.82 71.94C155.38 74.27 155.53 77.07 155.20 79.19C154.96 80.68 154.38 82.92 154.09 83.44C153.98 83.64 153.79 84.04 153.68 84.31C153.58 84.59 153.28 85.12 153.03 85.50C152.78 85.88 152.43 86.41 152.26 86.68C151.04 88.53 147.32 92.05 145.24 93.31C145.02 93.45 144.49 93.77 144.07 94.03C143.65 94.29 142.86 94.72 142.31 94.99C141.76 95.26 141.17 95.57 141.00 95.67C140.72 95.84 139.82 96.28 137.25 97.47C136.80 97.68 136.20 97.91 135.91 97.99C135.62 98.07 135.03 98.30 134.60 98.50C134.17 98.71 133.73 98.87 133.63 98.87C133.53 98.87 133.08 99.01 132.63 99.18C132.18 99.34 131.03 99.69 130.06 99.94C129.10 100.20 128.00 100.52 127.62 100.65C127.25 100.78 126.51 100.97 125.98 101.06C125.45 101.16 124.80 101.35 124.53 101.49C124.26 101.62 123.48 101.83 122.80 101.94C122.12 102.05 121.14 102.24 120.62 102.38C120.10 102.51 117.80 102.90 115.49 103.25C110.24 104.04 109.95 104.08 107.75 104.25C106.75 104.33 105.38 104.51 104.69 104.64C103.82 104.82 102.50 104.93 100.38 105.01C98.69 105.07 96.47 105.18 95.44 105.25C94.41 105.32 92.78 105.43 91.81 105.49C89.51 105.65 64.71 105.70 29.33 105.62ZM93.08 96.28C97.87 96.05 104.39 95.17 107.19 94.37C107.88 94.17 108.75 93.98 109.12 93.93C109.50 93.89 110.19 93.69 110.65 93.49C111.10 93.29 111.60 93.12 111.75 93.12C111.90 93.12 112.57 92.91 113.23 92.64C113.89 92.38 114.60 92.12 114.80 92.07C115.21 91.98 117.40 91.02 118.19 90.60C118.46 90.45 119.05 90.14 119.50 89.91C123.26 87.95 125.21 86.16 127.11 82.93C127.39 82.44 127.62 81.98 127.62 81.89C127.62 81.81 127.79 81.38 128.00 80.95C128.20 80.51 128.43 79.77 128.50 79.30C128.58 78.82 128.72 78.08 128.82 77.65C129.05 76.64 129.05 75.42 128.82 74.51C128.71 74.12 128.57 73.39 128.50 72.90C128.42 72.34 128.21 71.64 127.94 71.07C127.70 70.56 127.50 70.11 127.50 70.07C127.50 70.03 127.32 69.72 127.09 69.38C126.87 69.04 126.55 68.53 126.38 68.23C125.80 67.23 123.44 65.00 121.88 63.98C119.53 62.44 116.80 61.12 113.62 60.01C112.89 59.75 112.24 59.51 112.16 59.46C112.08 59.41 111.46 59.23 110.79 59.07C107.75 58.31 106.17 57.99 105.03 57.88C104.35 57.81 103.72 57.73 103.62 57.69C102.99 57.45 100.06 57.10 97.88 57.00C96.47 56.93 94.27 56.76 93.00 56.61C90.72 56.35 90.21 56.34 57.75 56.25C39.63 56.20 24.65 56.19 24.46 56.22C23.99 56.30 23.75 56.70 23.72 57.45C23.70 57.79 23.71 66.54 23.72 76.89C23.75 98.89 23.51 96.27 25.52 96.38C27.96 96.52 90.03 96.42 93.08 96.28ZM81.12 47.08C84.96 47.03 89.19 46.69 90.69 46.32C91.10 46.22 92.16 46.04 93.04 45.94C93.92 45.83 95.23 45.58 95.96 45.37C96.70 45.17 97.42 45.00 97.57 45.00C97.73 45.00 98.97 44.63 100.33 44.18C107.06 41.95 111.96 38.36 113.81 34.31C114.74 32.27 115.19 28.85 114.81 26.75C114.69 26.10 114.55 25.31 114.50 24.99C114.21 23.33 112.61 20.50 111.10 18.99C110.51 18.39 108.73 17.00 108.57 17.00C108.52 17.00 108.17 16.77 107.78 16.50C107.40 16.22 107.02 16.00 106.93 16.00C106.85 16.00 106.46 15.83 106.07 15.62C104.36 14.70 99.50 12.87 98.79 12.87C98.64 12.88 98.11 12.73 97.61 12.56C97.10 12.39 96.29 12.19 95.81 12.12C95.33 12.05 94.12 11.82 93.12 11.62C92.13 11.42 90.61 11.20 89.75 11.13C88.89 11.06 87.99 10.97 87.75 10.94C85.05 10.55 82.14 10.52 53.38 10.48C37.37 10.46 24.24 10.49 24.14 10.55C23.69 10.84 23.69 11.05 23.75 29.09C23.80 42.57 23.85 46.77 23.96 46.89C24.04 46.97 24.32 47.07 24.57 47.11C25.06 47.19 74.81 47.16 81.12 47.08Z"/></svg></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#team">Team</a></li>
+      <li class="dd" data-open="false">
+        <button type="button" aria-expanded="false" aria-haspopup="true">Resources <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dd-menu">
+          <a href="/blog">Articles<small>Guides written from client work</small></a>
+          <a href="/work">Work &amp; Case Studies<small>Reels, results, and how we got there</small></a>
+        </div>
+      </li>
+      <li class="cta"><a class="btn" href="https://calendly.com/trevorbragg9/30min" target="_blank" rel="noopener">Book a call <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <div>
-      <div class="hero-meta">
-        <div class="dot"></div>
-        <span>Jupiter · Palm Beach Gardens · Florida</span>
-      </div>
-      <h1 class="serif">Strategy.<br>Story. <em>Impact.</em></h1>
-      <p class="hero-tag">A full-service marketing and growth agency for brands ready to be seen, heard, and remembered. We build the strategy, tell the story, and engineer the systems that move the needle.</p>
-    </div>
-    <div class="hero-side">
-      <div class="num">EST. 2024</div>
-      <div class="label">Independent Agency</div>
-    </div>
+<section class="hero" data-hero>
+  <div class="hero-video">
+    <video data-autoplay muted loop playsinline preload="auto" poster="/assets/yachting-poster.jpg" aria-hidden="true">
+      <source src="/assets/yachting-loop.mp4" type="video/mp4">
+    </video>
   </div>
-  <div class="scroll-indicator">
-    <span>Scroll</span>
-    <div class="line"></div>
+  <div class="hero-tint" aria-hidden="true"></div>
+  <div class="hero-lockup" role="img" aria-label="BRG Creative Group. Strategy. Story. Impact.">
+    <svg class="mark-svg" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.6 107.1" fill="currentColor" fill-rule="evenodd"><path d="M396.44 106.99C395.48 106.94 393.25 106.84 391.50 106.77C388.06 106.62 386.14 106.48 383.50 106.19C382.57 106.09 381.05 105.95 380.11 105.88C379.18 105.81 377.99 105.68 377.49 105.57C375.74 105.22 375.06 105.12 373.79 104.99C373.09 104.93 372.15 104.76 371.71 104.62C371.26 104.48 370.46 104.32 369.92 104.25C368.99 104.13 368.36 104.01 365.19 103.31C364.43 103.14 363.27 102.92 362.60 102.82C361.93 102.71 361.01 102.49 360.56 102.32C360.11 102.15 359.45 101.97 359.09 101.93C358.73 101.88 358.04 101.69 357.56 101.50C357.08 101.31 356.49 101.12 356.25 101.07C355.66 100.95 353.14 100.17 352.06 99.78C351.58 99.61 350.68 99.28 350.06 99.07C349.44 98.85 348.71 98.55 348.44 98.41C348.16 98.27 347.68 98.08 347.37 98.00C347.07 97.92 346.59 97.73 346.31 97.57C346.04 97.41 345.67 97.24 345.50 97.19C345.18 97.10 343.78 96.48 341.77 95.54C341.12 95.25 340.57 95.00 340.53 95.00C340.49 95.00 340.18 94.82 339.83 94.59C339.49 94.37 338.93 94.05 338.60 93.88C338.02 93.58 336.70 92.80 334.19 91.28C333.57 90.90 332.90 90.50 332.70 90.39C329.33 88.50 325.40 84.90 320.78 79.47C319.75 78.26 317.84 75.50 317.60 74.88C317.54 74.71 317.36 74.39 317.20 74.19C316.58 73.36 315.08 70.25 314.61 68.79C314.46 68.32 314.20 67.60 314.03 67.19C313.86 66.78 313.65 65.97 313.54 65.39C313.44 64.81 313.25 64.05 313.11 63.70C312.97 63.34 312.73 62.03 312.56 60.69C312.39 59.38 312.16 57.67 312.05 56.88C311.81 55.22 311.87 52.33 312.18 49.81C312.28 48.99 312.46 47.44 312.57 46.38C312.71 45.13 312.88 44.17 313.07 43.68C313.22 43.26 313.44 42.49 313.55 41.96C313.65 41.44 313.88 40.67 314.06 40.26C314.23 39.85 314.51 39.10 314.68 38.60C315.01 37.58 315.55 36.35 316.19 35.11C316.43 34.65 316.62 34.20 316.62 34.10C316.62 34.00 316.86 33.55 317.16 33.09C317.45 32.64 318.09 31.63 318.59 30.85C319.09 30.07 319.73 29.14 320.03 28.79C320.32 28.43 320.90 27.73 321.31 27.23C322.52 25.76 326.56 21.70 328.12 20.39C329.74 19.03 331.91 17.41 332.75 16.93C333.06 16.76 333.73 16.34 334.25 16.00C334.77 15.67 335.81 15.04 336.56 14.62C337.32 14.19 338.25 13.65 338.64 13.42C339.03 13.19 339.43 13.00 339.52 13.00C339.62 13.00 339.95 12.84 340.26 12.65C340.95 12.21 344.89 10.28 346.06 9.80C346.54 9.61 347.05 9.38 347.19 9.30C347.32 9.21 347.74 9.06 348.10 8.95C348.47 8.84 348.95 8.65 349.17 8.51C349.38 8.38 349.90 8.17 350.31 8.06C350.73 7.94 351.34 7.71 351.69 7.56C352.47 7.20 356.08 6.06 357.00 5.87C357.38 5.79 358.06 5.59 358.51 5.43C358.96 5.26 359.81 5.04 360.40 4.95C360.98 4.85 361.85 4.64 362.33 4.47C362.80 4.30 363.54 4.12 363.98 4.07C364.42 4.02 365.25 3.85 365.83 3.68C366.41 3.51 367.40 3.29 368.03 3.20C369.67 2.94 372.83 2.41 374.38 2.12C375.10 1.99 376.26 1.83 376.95 1.76C377.64 1.69 378.29 1.60 378.39 1.57C378.84 1.40 381.25 1.10 383.00 1.00C384.07 0.94 385.87 0.78 387.00 0.65C390.92 0.18 391.97 0.13 399.50 0.07C409.88 -0.02 416.73 0.21 419.62 0.74C420.00 0.81 421.35 0.93 422.62 0.99C423.90 1.06 425.58 1.23 426.38 1.37C427.17 1.51 428.57 1.68 429.50 1.75C430.43 1.83 431.67 1.99 432.25 2.13C432.83 2.26 433.76 2.42 434.31 2.49C434.86 2.56 435.79 2.72 436.38 2.86C436.96 3.00 437.97 3.17 438.62 3.24C439.28 3.32 440.09 3.46 440.44 3.57C440.78 3.68 441.77 3.87 442.62 3.99C443.48 4.12 444.48 4.34 444.84 4.48C445.20 4.63 446.02 4.81 446.65 4.88C447.29 4.96 448.12 5.14 448.50 5.28C448.88 5.42 449.78 5.66 450.50 5.83C451.22 5.99 452.29 6.26 452.88 6.43C453.46 6.60 454.36 6.86 454.88 7.00C456.08 7.35 456.31 7.42 457.06 7.73C457.41 7.87 457.87 8.05 458.10 8.13C458.32 8.22 458.56 8.38 458.62 8.50C458.69 8.62 458.75 10.78 458.76 13.30C458.78 17.59 458.76 17.90 458.55 18.14C458.27 18.44 457.80 18.41 456.75 18.03C456.37 17.89 455.25 17.50 454.25 17.17C453.25 16.84 451.73 16.33 450.88 16.03C450.02 15.73 448.75 15.32 448.06 15.13C447.38 14.93 446.66 14.71 446.48 14.64C446.30 14.57 445.29 14.31 444.23 14.06C443.18 13.82 441.98 13.50 441.56 13.37C441.15 13.24 440.31 13.05 439.70 12.94C439.09 12.84 438.24 12.64 437.82 12.51C437.39 12.38 436.40 12.18 435.61 12.06C434.83 11.95 433.68 11.74 433.06 11.61C432.44 11.48 431.54 11.31 431.06 11.24C430.58 11.17 429.62 11.01 428.94 10.88C428.25 10.75 427.38 10.60 427.00 10.56C426.62 10.52 425.52 10.37 424.56 10.23C421.73 9.82 421.13 9.76 419.86 9.76C419.20 9.75 418.36 9.69 417.99 9.62C415.37 9.13 413.79 9.06 403.81 9.06C394.06 9.06 394.06 9.06 391.19 9.40C389.61 9.58 387.86 9.77 387.31 9.81C386.76 9.86 385.69 10.00 384.94 10.13C384.18 10.26 383.03 10.44 382.38 10.55C380.60 10.82 378.25 11.33 377.49 11.61C377.12 11.74 376.50 11.92 376.12 12.00C375.75 12.08 374.93 12.31 374.31 12.50C373.69 12.70 372.85 12.94 372.44 13.04C371.34 13.31 368.91 14.16 368.17 14.54C367.82 14.72 367.27 14.93 366.94 15.01C366.62 15.09 365.61 15.54 364.70 16.00C363.80 16.46 362.91 16.89 362.74 16.94C362.41 17.04 360.61 18.07 359.50 18.78C359.12 19.03 358.48 19.44 358.06 19.70C356.75 20.53 354.93 21.88 353.38 23.18C351.43 24.81 351.03 25.19 349.57 26.73C347.72 28.69 345.39 31.55 344.54 32.92C343.72 34.25 341.75 37.99 341.75 38.23C341.75 38.30 341.50 39.03 341.20 39.84C340.90 40.65 340.59 41.62 340.51 42.00C340.44 42.38 340.24 43.14 340.07 43.69C339.38 45.93 338.91 49.21 338.80 52.44C338.71 55.06 338.99 59.23 339.31 60.12C339.42 60.42 339.57 61.24 339.64 61.93C339.72 62.62 339.91 63.55 340.06 64.00C340.22 64.45 340.42 65.12 340.50 65.50C340.59 65.88 340.84 66.64 341.06 67.19C341.29 67.74 341.51 68.33 341.56 68.50C341.66 68.86 342.67 71.14 342.97 71.69C343.08 71.89 343.35 72.40 343.56 72.81C344.28 74.19 344.83 74.99 346.49 77.06C348.64 79.74 350.75 81.90 353.45 84.20C354.89 85.42 356.50 86.61 357.15 86.95C357.38 87.06 357.79 87.31 358.06 87.50C358.53 87.82 360.02 88.65 362.56 90.02C364.19 90.89 366.36 91.94 366.94 92.13C367.21 92.22 367.83 92.48 368.31 92.71C368.79 92.94 369.34 93.12 369.54 93.12C369.74 93.12 370.18 93.27 370.52 93.44C370.86 93.61 371.51 93.83 371.95 93.94C372.39 94.04 372.98 94.24 373.26 94.38C373.54 94.52 374.23 94.75 374.79 94.88C376.39 95.25 377.86 95.62 378.81 95.88C379.29 96.02 380.14 96.18 380.69 96.25C381.24 96.31 382.02 96.48 382.43 96.62C382.89 96.78 383.79 96.93 384.75 97.01C386.38 97.14 387.43 97.27 389.31 97.58C390.42 97.76 393.01 97.91 398.50 98.11C401.30 98.22 408.18 98.12 414.80 97.87C417.48 97.77 418.54 97.69 419.42 97.49C420.05 97.35 421.63 97.16 422.94 97.07C424.46 96.96 425.81 96.79 426.69 96.59C427.44 96.42 428.51 96.24 429.06 96.19C429.61 96.15 430.54 96.01 431.12 95.88C431.71 95.75 432.50 95.61 432.88 95.56C433.25 95.52 434.10 95.35 434.75 95.19C435.40 95.03 436.30 94.87 436.75 94.83C437.20 94.79 437.93 94.63 438.38 94.46C438.83 94.29 439.54 94.08 439.96 94.00C441.38 93.72 441.22 95.70 441.32 77.06C441.40 60.88 441.40 60.81 441.15 60.50C440.90 60.19 440.90 60.19 437.23 60.11C435.21 60.06 429.42 60.02 424.35 60.01C415.14 60.00 415.14 60.00 414.79 59.70C414.44 59.40 414.44 59.40 414.40 56.54C414.36 53.39 414.45 52.82 415.00 52.54C415.24 52.42 419.65 52.38 435.44 52.38C446.51 52.38 457.36 52.34 459.56 52.30C462.37 52.24 463.67 52.26 463.91 52.36C464.67 52.66 464.62 51.38 464.62 74.62C464.62 97.87 464.67 96.58 463.91 96.89C463.72 96.97 463.14 97.22 462.62 97.44C462.11 97.67 461.35 97.96 460.94 98.10C460.52 98.23 459.85 98.46 459.44 98.60C458.48 98.92 455.19 99.85 454.12 100.09C453.68 100.19 452.86 100.41 452.30 100.58C451.74 100.75 450.70 100.99 449.98 101.12C449.27 101.25 448.38 101.47 448.00 101.60C447.62 101.74 446.98 101.88 446.56 101.93C446.15 101.97 445.28 102.17 444.62 102.37C443.97 102.57 442.37 102.90 441.06 103.12C439.76 103.34 438.12 103.65 437.44 103.81C436.75 103.97 435.62 104.14 434.94 104.19C434.20 104.24 433.29 104.40 432.73 104.58C432.09 104.78 431.22 104.92 430.10 105.00C428.72 105.11 426.50 105.43 425.44 105.69C425.30 105.73 424.12 105.81 422.81 105.87C421.51 105.94 420.13 106.05 419.75 106.13C418.80 106.32 414.42 106.65 410.12 106.86C406.86 107.02 398.72 107.10 396.44 106.99ZM315.70 105.78C315.65 105.73 308.84 105.66 300.58 105.62C283.70 105.55 285.56 105.67 283.95 104.58C283.52 104.30 282.79 103.82 282.31 103.52C279.75 101.94 276.61 99.86 276.06 99.37C275.93 99.25 275.64 99.06 275.44 98.95C275.23 98.84 274.69 98.48 274.23 98.15C272.93 97.22 271.80 96.45 270.25 95.41C266.12 92.66 263.49 90.92 262.88 90.54C261.48 89.66 258.68 87.85 258.38 87.62C258.20 87.49 257.78 87.21 257.44 87.00C257.09 86.79 256.50 86.39 256.12 86.12C255.25 85.48 253.47 84.26 252.96 83.94C252.74 83.81 252.08 83.36 251.50 82.94C249.89 81.80 245.67 79.00 245.55 79.00C245.49 79.00 245.12 78.79 244.72 78.53C244.33 78.27 243.64 77.84 243.19 77.56C242.10 76.90 238.17 74.30 237.00 73.47C236.83 73.34 236.07 72.84 235.33 72.34C234.58 71.84 233.88 71.38 233.78 71.31C233.67 71.24 233.13 70.89 232.58 70.54C232.02 70.18 231.31 69.71 231.00 69.50C230.69 69.29 229.96 68.81 229.38 68.44C228.17 67.66 227.37 67.12 226.59 66.55C226.30 66.34 225.83 66.04 225.54 65.90C225.25 65.75 224.98 65.57 224.94 65.51C224.90 65.44 224.58 65.21 224.22 65.00C223.12 64.34 219.25 61.75 217.39 60.43C216.96 60.12 216.96 60.12 213.39 60.12C209.38 60.12 207.13 60.00 204.49 59.63C203.50 59.49 201.93 59.32 201.00 59.25C194.86 58.79 190.87 58.16 189.19 57.37C186.88 56.30 185.92 55.84 185.69 55.71C185.07 55.37 183.14 54.31 182.69 54.07C182.41 53.93 181.91 53.63 181.57 53.40C181.23 53.18 180.86 53.00 180.75 53.00C180.63 53.00 180.14 52.73 179.65 52.41C178.75 51.82 178.51 51.41 178.90 51.17C178.98 51.12 192.57 51.06 209.10 51.04C225.63 51.02 239.20 50.97 239.25 50.93C239.31 50.90 240.50 50.82 241.90 50.75C243.29 50.68 245.06 50.51 245.81 50.38C246.57 50.24 247.87 50.05 248.71 49.94C249.57 49.83 250.73 49.58 251.36 49.37C251.99 49.17 252.65 49.00 252.84 49.00C253.03 49.00 253.58 48.85 254.06 48.68C254.54 48.50 255.39 48.23 255.94 48.07C256.49 47.91 257.25 47.65 257.62 47.50C258.00 47.35 258.63 47.12 259.02 46.99C260.26 46.59 263.44 44.94 264.06 44.38C264.20 44.26 264.45 44.08 264.62 44.00C265.99 43.30 268.81 40.52 269.63 39.06C269.76 38.83 270.01 38.42 270.18 38.16C270.53 37.62 271.31 35.75 271.51 34.96C271.83 33.67 271.95 31.11 271.79 29.10C271.64 27.23 271.60 27.06 271.02 25.54C270.18 23.35 269.46 22.22 267.62 20.21C266.99 19.52 264.15 17.32 262.98 16.61C261.30 15.60 258.33 14.25 257.11 13.94C256.67 13.83 255.74 13.54 255.05 13.31C254.36 13.07 253.67 12.87 253.53 12.87C253.39 12.87 252.75 12.71 252.11 12.52C251.46 12.32 250.63 12.12 250.25 12.07C249.87 12.02 248.97 11.82 248.25 11.62C247.42 11.39 246.36 11.21 245.38 11.13C244.52 11.06 243.47 10.95 243.06 10.88C240.99 10.53 236.76 10.49 202.69 10.46C167.56 10.44 167.56 10.44 166.89 10.09C166.52 9.90 166.06 9.62 165.86 9.47C165.18 8.93 163.98 8.14 161.54 6.62C161.15 6.38 160.40 5.91 159.87 5.56C159.34 5.22 158.74 4.84 158.55 4.72C158.35 4.60 157.79 4.25 157.31 3.94C156.83 3.63 156.09 3.21 155.67 3.01C155.24 2.81 154.84 2.54 154.76 2.40C154.58 2.05 154.59 1.56 154.78 1.41C154.88 1.33 170.05 1.30 198.12 1.31C237.44 1.34 241.41 1.36 242.44 1.55C243.16 1.68 244.95 1.80 247.44 1.88C251.28 2.01 253.84 2.20 256.38 2.56C257.10 2.66 258.95 2.89 260.50 3.06C262.05 3.24 263.85 3.49 264.50 3.63C265.15 3.76 266.26 3.96 266.95 4.06C267.64 4.16 268.51 4.35 268.87 4.50C269.23 4.64 269.95 4.81 270.48 4.89C271.01 4.96 271.83 5.16 272.31 5.33C272.79 5.50 273.61 5.75 274.12 5.87C275.16 6.13 277.87 7.12 278.75 7.56C279.06 7.71 279.54 7.91 279.81 8.00C280.09 8.09 280.62 8.32 281.00 8.51C281.38 8.71 282.00 9.01 282.38 9.18C283.82 9.85 285.81 10.97 287.15 11.89C287.65 12.23 288.29 12.66 288.56 12.85C290.37 14.06 293.46 17.06 294.90 19.01C295.55 19.89 296.53 21.66 296.81 22.48C296.97 22.94 297.22 23.59 297.37 23.92C297.97 25.32 298.46 30.73 298.13 32.19C298.06 32.46 297.95 33.22 297.87 33.87C297.77 34.65 297.52 35.64 297.13 36.81C296.16 39.62 295.08 41.31 292.69 43.70C290.36 46.04 288.18 47.68 285.67 49.00C285.32 49.18 284.87 49.45 284.67 49.59C284.34 49.83 283.86 50.06 280.94 51.44C280.32 51.73 279.51 52.07 279.13 52.19C278.76 52.31 278.28 52.51 278.07 52.63C277.86 52.75 277.35 52.92 276.94 53.00C276.52 53.09 275.88 53.31 275.50 53.50C275.12 53.69 274.60 53.88 274.34 53.93C274.08 53.97 273.63 54.12 273.34 54.24C272.79 54.48 270.10 55.16 269.12 55.31C268.82 55.36 268.14 55.53 267.62 55.70C267.11 55.86 266.22 56.05 265.65 56.12C265.08 56.19 264.16 56.38 263.59 56.55C263.03 56.73 261.97 56.92 261.24 57.00C260.51 57.07 259.53 57.21 259.05 57.30C256.74 57.77 256.22 57.85 255.06 57.93C254.38 57.97 252.83 58.12 251.62 58.25C250.42 58.39 249.13 58.51 248.76 58.53C247.58 58.59 247.54 59.41 248.69 60.01C249.03 60.18 249.73 60.60 250.24 60.94C250.75 61.28 251.50 61.77 251.90 62.03C252.80 62.61 253.89 63.31 254.70 63.83C255.04 64.05 255.48 64.35 255.69 64.49C256.05 64.75 257.27 65.53 258.91 66.55C259.34 66.82 259.91 67.20 260.19 67.40C260.46 67.59 261.15 68.05 261.71 68.41C264.25 70.03 266.38 71.45 267.12 72.01C267.57 72.34 268.15 72.73 268.40 72.87C268.66 73.01 269.20 73.34 269.61 73.60C270.02 73.85 270.51 74.16 270.70 74.28C270.90 74.39 271.69 74.90 272.45 75.40C274.30 76.62 274.86 76.98 276.17 77.84C276.78 78.24 277.58 78.76 277.94 79.00C278.30 79.24 278.87 79.62 279.20 79.84C279.54 80.06 280.07 80.42 280.38 80.63C280.68 80.85 281.49 81.37 282.17 81.79C283.59 82.69 284.39 83.21 285.58 84.03C286.05 84.35 286.92 84.94 287.52 85.34C288.11 85.74 288.68 86.12 288.78 86.19C289.26 86.53 293.21 89.11 293.78 89.47C295.25 90.38 296.59 91.26 297.07 91.62C297.36 91.83 297.64 92.00 297.70 92.00C297.76 92.00 297.95 92.12 298.12 92.26C298.30 92.40 298.92 92.82 299.50 93.21C300.08 93.59 301.11 94.28 301.78 94.74C302.44 95.19 303.29 95.76 303.66 96.00C304.39 96.47 305.42 97.16 306.12 97.66C306.90 98.20 309.12 99.68 309.57 99.95C309.80 100.09 310.12 100.32 310.28 100.45C310.44 100.59 310.98 101.00 311.50 101.36C312.02 101.71 312.63 102.14 312.88 102.31C314.12 103.18 314.75 103.58 315.41 103.91C316.35 104.38 316.81 105.09 316.47 105.53C316.28 105.76 315.83 105.92 315.70 105.78ZM29.33 105.62C0.73 105.56 0.73 105.56 0.36 105.15C-0.00 104.75 -0.00 104.75 -0.00 53.44C-0.00 2.14 -0.00 2.14 0.28 1.81C0.44 1.63 0.76 1.44 1.00 1.39C1.74 1.23 82.34 1.31 83.94 1.48C84.69 1.55 87.31 1.71 89.75 1.81C92.19 1.92 94.67 2.06 95.25 2.13C96.37 2.26 97.90 2.41 100.19 2.62C102.56 2.84 103.73 2.99 106.44 3.45C107.88 3.70 109.48 3.95 110.00 4.02C110.52 4.09 111.58 4.31 112.38 4.50C113.17 4.69 114.07 4.89 114.38 4.94C114.68 4.99 115.44 5.18 116.06 5.38C116.68 5.57 117.81 5.91 118.56 6.13C121.51 7.00 123.76 7.80 125.06 8.43C125.41 8.60 126.45 9.11 127.38 9.56C132.38 11.99 135.73 14.44 137.73 17.12C139.95 20.10 140.44 21.21 140.99 24.47C141.68 28.50 140.93 33.10 139.19 35.43C138.98 35.71 138.72 36.08 138.61 36.25C138.18 36.92 136.17 39.06 135.29 39.79C133.32 41.41 131.45 42.61 129.38 43.58C128.45 44.02 127.47 44.49 127.21 44.63C126.94 44.78 126.41 45.00 126.03 45.14C125.65 45.27 125.27 45.43 125.18 45.50C125.10 45.57 124.58 45.80 124.04 45.99C123.50 46.19 122.55 46.55 121.93 46.79C120.50 47.35 118.28 47.96 116.75 48.20C115.44 48.41 114.79 48.73 114.67 49.22C114.56 49.65 114.99 50.00 115.61 50.00C115.86 50.00 116.54 50.12 117.11 50.25C117.69 50.39 118.73 50.59 119.43 50.70C120.12 50.80 121.00 50.96 121.38 51.06C121.75 51.16 122.51 51.29 123.05 51.37C123.60 51.44 124.49 51.64 125.03 51.81C125.57 51.99 126.15 52.12 126.33 52.12C126.50 52.12 127.08 52.27 127.60 52.45C128.13 52.63 128.98 52.88 129.48 53.01C129.99 53.14 130.58 53.35 130.80 53.49C131.01 53.62 131.44 53.76 131.75 53.81C132.06 53.86 132.82 54.09 133.44 54.32C134.06 54.55 134.96 54.86 135.44 55.01C136.60 55.37 139.05 56.43 140.69 57.28C140.96 57.42 141.61 57.76 142.12 58.03C144.01 59.01 145.32 59.83 146.93 61.05C148.20 62.01 151.26 64.99 151.97 65.96C152.82 67.11 153.61 68.38 153.76 68.85C153.84 69.10 154.01 69.47 154.14 69.68C154.26 69.89 154.57 70.91 154.82 71.94C155.38 74.27 155.53 77.07 155.20 79.19C154.96 80.68 154.38 82.92 154.09 83.44C153.98 83.64 153.79 84.04 153.68 84.31C153.58 84.59 153.28 85.12 153.03 85.50C152.78 85.88 152.43 86.41 152.26 86.68C151.04 88.53 147.32 92.05 145.24 93.31C145.02 93.45 144.49 93.77 144.07 94.03C143.65 94.29 142.86 94.72 142.31 94.99C141.76 95.26 141.17 95.57 141.00 95.67C140.72 95.84 139.82 96.28 137.25 97.47C136.80 97.68 136.20 97.91 135.91 97.99C135.62 98.07 135.03 98.30 134.60 98.50C134.17 98.71 133.73 98.87 133.63 98.87C133.53 98.87 133.08 99.01 132.63 99.18C132.18 99.34 131.03 99.69 130.06 99.94C129.10 100.20 128.00 100.52 127.62 100.65C127.25 100.78 126.51 100.97 125.98 101.06C125.45 101.16 124.80 101.35 124.53 101.49C124.26 101.62 123.48 101.83 122.80 101.94C122.12 102.05 121.14 102.24 120.62 102.38C120.10 102.51 117.80 102.90 115.49 103.25C110.24 104.04 109.95 104.08 107.75 104.25C106.75 104.33 105.38 104.51 104.69 104.64C103.82 104.82 102.50 104.93 100.38 105.01C98.69 105.07 96.47 105.18 95.44 105.25C94.41 105.32 92.78 105.43 91.81 105.49C89.51 105.65 64.71 105.70 29.33 105.62ZM93.08 96.28C97.87 96.05 104.39 95.17 107.19 94.37C107.88 94.17 108.75 93.98 109.12 93.93C109.50 93.89 110.19 93.69 110.65 93.49C111.10 93.29 111.60 93.12 111.75 93.12C111.90 93.12 112.57 92.91 113.23 92.64C113.89 92.38 114.60 92.12 114.80 92.07C115.21 91.98 117.40 91.02 118.19 90.60C118.46 90.45 119.05 90.14 119.50 89.91C123.26 87.95 125.21 86.16 127.11 82.93C127.39 82.44 127.62 81.98 127.62 81.89C127.62 81.81 127.79 81.38 128.00 80.95C128.20 80.51 128.43 79.77 128.50 79.30C128.58 78.82 128.72 78.08 128.82 77.65C129.05 76.64 129.05 75.42 128.82 74.51C128.71 74.12 128.57 73.39 128.50 72.90C128.42 72.34 128.21 71.64 127.94 71.07C127.70 70.56 127.50 70.11 127.50 70.07C127.50 70.03 127.32 69.72 127.09 69.38C126.87 69.04 126.55 68.53 126.38 68.23C125.80 67.23 123.44 65.00 121.88 63.98C119.53 62.44 116.80 61.12 113.62 60.01C112.89 59.75 112.24 59.51 112.16 59.46C112.08 59.41 111.46 59.23 110.79 59.07C107.75 58.31 106.17 57.99 105.03 57.88C104.35 57.81 103.72 57.73 103.62 57.69C102.99 57.45 100.06 57.10 97.88 57.00C96.47 56.93 94.27 56.76 93.00 56.61C90.72 56.35 90.21 56.34 57.75 56.25C39.63 56.20 24.65 56.19 24.46 56.22C23.99 56.30 23.75 56.70 23.72 57.45C23.70 57.79 23.71 66.54 23.72 76.89C23.75 98.89 23.51 96.27 25.52 96.38C27.96 96.52 90.03 96.42 93.08 96.28ZM81.12 47.08C84.96 47.03 89.19 46.69 90.69 46.32C91.10 46.22 92.16 46.04 93.04 45.94C93.92 45.83 95.23 45.58 95.96 45.37C96.70 45.17 97.42 45.00 97.57 45.00C97.73 45.00 98.97 44.63 100.33 44.18C107.06 41.95 111.96 38.36 113.81 34.31C114.74 32.27 115.19 28.85 114.81 26.75C114.69 26.10 114.55 25.31 114.50 24.99C114.21 23.33 112.61 20.50 111.10 18.99C110.51 18.39 108.73 17.00 108.57 17.00C108.52 17.00 108.17 16.77 107.78 16.50C107.40 16.22 107.02 16.00 106.93 16.00C106.85 16.00 106.46 15.83 106.07 15.62C104.36 14.70 99.50 12.87 98.79 12.87C98.64 12.88 98.11 12.73 97.61 12.56C97.10 12.39 96.29 12.19 95.81 12.12C95.33 12.05 94.12 11.82 93.12 11.62C92.13 11.42 90.61 11.20 89.75 11.13C88.89 11.06 87.99 10.97 87.75 10.94C85.05 10.55 82.14 10.52 53.38 10.48C37.37 10.46 24.24 10.49 24.14 10.55C23.69 10.84 23.69 11.05 23.75 29.09C23.80 42.57 23.85 46.77 23.96 46.89C24.04 46.97 24.32 47.07 24.57 47.11C25.06 47.19 74.81 47.16 81.12 47.08Z"/></svg>
+    <div class="rule"></div>
+    <div class="slogan">Strategy<i>&middot;</i>Story<i>&middot;</i>Impact</div>
+  </div>
+  <div class="wrap">
+    <div class="hero-foot">
+      <p class="lead">A marketing and growth consultancy with a production company inside it. Jupiter and Palm Beach Gardens, Florida.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://calendly.com/trevorbragg9/30min" target="_blank" rel="noopener">Book a discovery call <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="btn ghost" href="/work">See the work</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee">
-  <div class="marquee-track">
-    <div class="marquee-item">Brand Strategy</div>
-    <div class="marquee-item">Web Development</div>
-    <div class="marquee-item">Local SEO</div>
-    <div class="marquee-item">Paid Advertising</div>
-    <div class="marquee-item">Content Production</div>
-    <div class="marquee-item">Social Strategy</div>
-    <div class="marquee-item">Reputation Management</div>
-    <div class="marquee-item">Growth Consulting</div>
-    <div class="marquee-item">Brand Strategy</div>
-    <div class="marquee-item">Web Development</div>
-    <div class="marquee-item">Local SEO</div>
-    <div class="marquee-item">Paid Advertising</div>
-    <div class="marquee-item">Content Production</div>
-    <div class="marquee-item">Social Strategy</div>
-    <div class="marquee-item">Reputation Management</div>
-    <div class="marquee-item">Growth Consulting</div>
+<!-- INTRO -->
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-grid">
+      <h1 class="reveal">Strategy first. Then the story. Then the results.</h1>
+      <p class="lead reveal" data-delay="1">BRG Creative Group is a marketing and video agency in Jupiter, Florida. We build the strategy, tell the story, and engineer the systems that move the needle for brands ready to be seen, heard, and remembered.</p>
+    </div>
+    <div class="intro-facts reveal">
+      <div><span>Based in</span>Jupiter &amp; Palm Beach Gardens, Florida</div>
+      <div><span>Founded</span>2024, independent</div>
+      <div><span>Practice</span>Strategy, brand, web, search, paid media, production</div>
+      <div><span>Sectors</span>Yachting, real estate &amp; construction, events, growing businesses</div>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- SERVICES -->
-<section class="services" id="services">
-  <video class="services-bg-video" autoplay muted loop playsinline preload="auto" poster="assets/brand-reel-poster.jpg" aria-hidden="true">
-    <source src="assets/brand-reel.mp4" type="video/mp4">
-  </video>
-  <div class="services-bg-overlay"></div>
-  <div class="section-header">
-    <div class="section-label">What We Do</div>
-    <h2 class="section-title">A complete <em>growth engine</em> built around your brand, not bolted on.</h2>
-  </div>
-  <div class="services-grid">
-    <div class="service">
-      <div>
-        <div class="service-num">01 / Foundation</div>
-        <h3 class="service-title">Brand Strategy & Identity</h3>
-        <p class="service-desc">Positioning, messaging architecture, and visual systems that make you instantly recognizable in a crowded market.</p>
-      </div>
-      <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+<section class="section rule white" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>A complete growth engine, built around your business rather than bolted on.</h2>
+      <p class="lead">Growth strategy, websites, local SEO, paid media, and production for businesses across Palm Beach County, the Treasure Coast, and South Florida. Every engagement starts with diagnosis, so the work that follows solves the problem that actually exists.</p>
     </div>
-    <div class="service">
-      <div>
-        <div class="service-num">02 / Presence</div>
-        <h3 class="service-title">Websites Built to Convert</h3>
-        <p class="service-desc">Fast, modern sites engineered around one job: turning the right visitors into leads. No templates. No filler.</p>
+    <div class="services-grid reveal">
+      <div class="service">
+        <div class="label">Foundation</div>
+        <div>
+          <h3>Brand Strategy &amp; Identity</h3>
+          <p>Positioning, messaging architecture, and visual systems that make you instantly recognizable in a crowded market.</p>
+        </div>
       </div>
-      <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-    </div>
-    <div class="service">
-      <div>
-        <div class="service-num">03 / Discovery</div>
-        <h3 class="service-title">Local SEO & Search</h3>
-        <p class="service-desc">Service pages, area pages, Google Business Profile tuning, and the kind of content that wins "near me" intent.</p>
+      <div class="service">
+        <div class="label">Presence</div>
+        <div>
+          <h3>Websites Built to Convert</h3>
+          <p>Fast, modern sites engineered around one job: turning the right visitors into leads. No templates. No filler.</p>
+        </div>
       </div>
-      <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-    </div>
-    <div class="service">
-      <div>
-        <div class="service-num">04 / Demand</div>
-        <h3 class="service-title">Paid Advertising</h3>
-        <p class="service-desc">Meta, Google, and YouTube campaigns built around bottom-of-funnel intent and tracked to real revenue.</p>
+      <div class="service">
+        <div class="label">Discovery</div>
+        <div>
+          <h3>Local SEO &amp; Search</h3>
+          <p>Service pages, area pages, Google Business Profile tuning, and the kind of content that wins "near me" intent.</p>
+        </div>
       </div>
-      <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-    </div>
-    <div class="service">
-      <div>
-        <div class="service-num">05 / Story</div>
-        <h3 class="service-title">Content & Production</h3>
-        <p class="service-desc">Cinematic video, photo, and social content shot with intent. Built to perform across every channel.</p>
+      <div class="service">
+        <div class="label">Demand</div>
+        <div>
+          <h3>Paid Advertising</h3>
+          <p>Meta, Google, and YouTube campaigns built around bottom-of-funnel intent and tracked to real revenue.</p>
+        </div>
       </div>
-      <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-    </div>
-    <div class="service">
-      <div>
-        <div class="service-num">06 / Scale</div>
-        <h3 class="service-title">Growth Consulting</h3>
-        <p class="service-desc">Senior-level strategy on retainer. We diagnose what's actually broken and build the roadmap to fix it.</p>
+      <div class="service">
+        <div class="label">Story</div>
+        <div>
+          <h3>Content &amp; Production</h3>
+          <p>Cinematic video, photo, and social content shot with intent. Built to perform across every channel.</p>
+        </div>
       </div>
-      <span class="service-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      <div class="service">
+        <div class="label">Scale</div>
+        <div>
+          <h3>Growth Consulting</h3>
+          <p>Senior-level strategy on retainer. We diagnose what's actually broken and build the roadmap to fix it.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- APPROACH -->
-<section class="approach" id="approach">
-  <div class="section-header">
-    <div class="section-label">How We Work</div>
-    <h2 class="section-title">Three phases. <em>One outcome:</em> a brand that compounds.</h2>
-  </div>
-  <div class="approach-content">
-    <div class="approach-grid">
-      <div class="approach-step">
-        <div class="approach-num">i</div>
+<section class="section field" id="approach">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Three phases. One outcome: a brand that compounds.</h2>
+      <p class="lead">We work the way a good consultancy does. Understand the business, write the plan, then stay to execute it.</p>
+    </div>
+    <div class="phases">
+      <div class="phase reveal">
+        <div class="label">Phase one</div>
         <h3>Discovery</h3>
         <p>We start by understanding your business, not just the brand. Audience, offer, economics, and what's actually getting in the way of growth. Every engagement opens with a deep audit so the strategy that follows is rooted in your reality.</p>
       </div>
-      <div class="approach-step">
-        <div class="approach-num">ii</div>
+      <div class="phase reveal" data-delay="1">
+        <div class="label">Phase two</div>
         <h3>Strategy</h3>
         <p>Positioning, channels, content, and the conversion architecture. You walk away from this phase with a documented growth plan and a clear, prioritized roadmap. Not a deck full of buzzwords.</p>
       </div>
-      <div class="approach-step">
-        <div class="approach-num">iii</div>
-        <h3>Execution & Support</h3>
+      <div class="phase reveal" data-delay="2">
+        <div class="label">Phase three</div>
+        <h3>Execution &amp; Support</h3>
         <p>This is where most agencies fall apart. We build, ship, measure, and iterate together. You get senior-level work, transparent reporting, and a partner who's actually accountable to the outcomes.</p>
       </div>
+    </div>
+    <div class="approach-foot reveal">
+      <p>Every engagement opens with a discovery call. Thirty minutes, no pitch theater, and a straight read on what we would do first.</p>
+      <a class="btn" href="https://calendly.com/trevorbragg9/30min" target="_blank" rel="noopener">Book a discovery call <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
     </div>
   </div>
 </section>
 
-<!-- WORK -->
-<section class="work" id="work">
-  <div class="section-header">
-    <div class="section-label">Industries We Serve</div>
-    <h2 class="section-title">Built for the brands we <em>believe in.</em></h2>
+<!-- INDUSTRIES -->
+<section class="section" id="industries">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Built for the brands we believe in.</h2>
+      <p class="lead">Cinematic video production for yachts, real estate, and events, and full-stack growth for local operators. Four sectors where we know the buyer, the season, and the sales cycle. Live footage from our own productions.</p>
+    </div>
+    <div class="industries">
+
+      <div class="industry reveal">
+        <div class="media r-16-9">
+          <video data-autoplay muted loop playsinline preload="metadata" poster="/assets/yachting-poster.jpg" aria-hidden="true">
+            <source src="/assets/yachting-loop.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="meta">
+          <div>
+            <div class="label">Yacht media</div>
+            <h3>Yachting</h3>
+            <p>Brand films, charter spots, walkthroughs, and aerial cinematography for brokerages, charter companies, and sales teams.</p>
+          </div>
+          <div class="idx num">1 / 4</div>
+        </div>
+      </div>
+
+      <div class="industry reveal" data-delay="1">
+        <div class="media r-16-9">
+          <video data-autoplay muted loop playsinline preload="metadata" poster="/assets/realestate-poster.jpg" aria-hidden="true">
+            <source src="/assets/realestate-loop.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="meta">
+          <div>
+            <div class="label">Real estate &middot; Construction</div>
+            <h3>Real Estate &amp; Construction</h3>
+            <p>Cinematic property tours, drone aerials, project showcases, and listing campaigns built to attract serious buyers and showcase the build.</p>
+          </div>
+          <div class="idx num">2 / 4</div>
+        </div>
+      </div>
+
+      <div class="industry reveal">
+        <div class="media r-16-9">
+          <video data-autoplay muted loop playsinline preload="metadata" poster="/assets/events-poster.jpg" aria-hidden="true">
+            <source src="/assets/events-loop.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="meta">
+          <div>
+            <div class="label">Events &middot; Production</div>
+            <h3>Events</h3>
+            <p>Aftermovies, recap reels, and live-event coverage that capture energy and turn one night into year-round content.</p>
+          </div>
+          <div class="idx num">3 / 4</div>
+        </div>
+      </div>
+
+      <div class="industry reveal" data-delay="1">
+        <div class="media r-16-9">
+          <video data-autoplay muted loop playsinline preload="metadata" poster="/assets/smb-poster.jpg" aria-hidden="true">
+            <source src="/assets/smb-loop.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="meta">
+          <div>
+            <div class="label">Brand &middot; Web &middot; SEO &middot; Paid</div>
+            <h3>SMB &amp; Brand Growth</h3>
+            <p>Full-stack growth for local operators. Brand identity, websites, SEO, and paid media engineered to drive revenue.</p>
+          </div>
+          <div class="idx num">4 / 4</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="industries-cta reveal">
+      <a class="btn" href="/work">See the work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      <a class="link" href="/work#case-studies">Read the case studies <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+    </div>
   </div>
-  <div class="work-grid">
+</section>
 
-    <!-- TILE 1 :: YACHTING -->
-    <div class="work-item">
-      <div class="work-loop" style="background-image: url('assets/yachting-poster.jpg');">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/yachting-poster.jpg" aria-hidden="true">
-          <source src="assets/yachting-loop.mp4" type="video/mp4">
-        </video>
-        <div class="work-loop-label">Live Showcase</div>
-      </div>
-      <div class="work-meta">
-        <div class="work-cat">Yacht Media</div>
-        <h4>Yachting</h4>
-        <p>Brand films, charter spots, walkthroughs, and aerial cinematography for brokerages, charter companies, and sales teams.</p>
-      </div>
+<!-- RESULTS -->
+<section class="section rule white" id="results">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Where strategy meets the work.</h2>
+      <p class="lead">Two recent engagements, with the numbers. The full case studies cover the challenge, the approach, and what changed.</p>
     </div>
-
-    <!-- TILE 2 :: REAL ESTATE & CONSTRUCTION -->
-    <div class="work-item">
-      <div class="work-loop" style="background-image: url('assets/realestate-poster.jpg');">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/realestate-poster.jpg" aria-hidden="true">
-          <source src="assets/realestate-loop.mp4" type="video/mp4">
-        </video>
-        <div class="work-loop-label">Live Showcase</div>
-      </div>
-      <div class="work-meta">
-        <div class="work-cat">Real Estate · Construction</div>
-        <h4>Real Estate & Construction</h4>
-        <p>Cinematic property tours, drone aerials, project showcases, and listing campaigns built to attract serious buyers and showcase the build.</p>
-      </div>
+    <div class="results">
+      <article class="result reveal">
+        <div class="label">Real estate &amp; construction &middot; SEO + content</div>
+        <div class="metrics">
+          <div class="metric"><div class="val num">+30%</div><div class="key">Organic traffic</div></div>
+          <div class="metric"><div class="val num">5</div><div class="key">Keywords ranking top 3</div></div>
+          <div class="metric"><div class="val num">+10</div><div class="key">Qualified leads per month</div></div>
+        </div>
+        <h3>Turning a referral-only builder into the name that owns local search.</h3>
+        <a class="link" href="/work#case-studies">Read the case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </article>
+      <article class="result reveal" data-delay="1">
+        <div class="label">Yachting &middot; Content strategy + distribution</div>
+        <div class="metrics">
+          <div class="metric"><div class="val num">+40%</div><div class="key">Engaged reach</div></div>
+          <div class="metric"><div class="val num">100+</div><div class="key">Assets per shoot</div></div>
+          <div class="metric"><div class="val num">+20%</div><div class="key">Inbound charter inquiries</div></div>
+        </div>
+        <h3>One shoot, a season of content, a brokerage that finally looks the part.</h3>
+        <a class="link" href="/work#case-studies">Read the case study <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </article>
     </div>
-
-    <!-- TILE 3 :: EVENTS -->
-    <div class="work-item">
-      <div class="work-loop" style="background-image: url('assets/events-poster.jpg');">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/events-poster.jpg" aria-hidden="true">
-          <source src="assets/events-loop.mp4" type="video/mp4">
-        </video>
-        <div class="work-loop-label">Live Showcase</div>
-      </div>
-      <div class="work-meta">
-        <div class="work-cat">Events · Production</div>
-        <h4>Events</h4>
-        <p>Aftermovies, recap reels, and live-event coverage that capture energy and turn one night into year-round content.</p>
-      </div>
-    </div>
-
-    <!-- TILE 4 :: SMB & BRAND GROWTH -->
-    <div class="work-item">
-      <div class="work-loop" style="background-image: url('assets/smb-poster.jpg');">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/smb-poster.jpg" aria-hidden="true">
-          <source src="assets/smb-loop.mp4" type="video/mp4">
-        </video>
-        <div class="work-loop-label">Live Showcase</div>
-      </div>
-      <div class="work-meta">
-        <div class="work-cat">Brand · Web · SEO · Paid</div>
-        <h4>SMB & Brand Growth</h4>
-        <p>Full-stack growth for local operators. Brand identity, websites, SEO, and paid media engineered to drive revenue.</p>
-      </div>
-    </div>
-
-  </div>
-  <div class="work-cta">
-    <a href="/work" class="btn">More Work Here →</a>
   </div>
 </section>
 
 <!-- TEAM -->
-<section class="team" id="team">
-  <div class="section-header">
-    <div class="section-label">The Team</div>
-    <h2 class="section-title">Senior-level work, <em>without the agency overhead.</em></h2>
-  </div>
-  <div class="team-content">
-    <div class="team-intro">
-      <p>BRG is built around a small, hands-on team. You work directly with the people doing the work. No account managers, no handoffs, no diluted strategy. Just two operators who care about the outcome as much as you do.</p>
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Senior-level work, without the agency overhead.</h2>
+      <p class="lead">BRG is built around a small, hands-on team. You work directly with the people doing the work. No account managers, no handoffs, no diluted strategy. Just two operators who care about the outcome as much as you do.</p>
     </div>
-
-    <div class="team-grid">
-      <div class="member">
-        <div class="member-image trev">
-          <img class="member-photo" src="assets/trevor-headshot.jpg" alt="Trevor Bragg, Co-Founder of BRG Creative Group" loading="lazy">
+    <div class="team">
+      <div class="member reveal">
+        <div class="media r-4-5">
+          <img src="/assets/trevor-headshot.jpg" alt="Trevor Bragg, Co-Founder of BRG Creative Group" loading="lazy" width="1000" height="1250">
         </div>
-        <div class="member-body">
-          <div class="member-role">Co-Founder</div>
+        <div>
+          <div class="label">Co-founder</div>
           <h3>Trevor Bragg</h3>
-          <div class="member-title">Strategy & Growth</div>
-          <p class="member-bio">Marketing strategist with four years scaling brands across tourism, broadcast, and local services. Trevor leads the strategic side of every engagement: positioning, growth roadmaps, web, SEO, and the systems that turn marketing spend into measurable revenue.</p>
-          <div class="member-focus">
-            <span>Brand Strategy</span>
-            <span>Web & SEO</span>
-            <span>Paid Media</span>
-            <span>Production</span>
-            <span>Consulting</span>
-          </div>
+          <div class="role">Strategy &amp; Growth</div>
+          <p class="bio">Marketing strategist with four years scaling brands across tourism, broadcast, and local services. Trevor leads the strategic side of every engagement: positioning, growth roadmaps, web, SEO, and the systems that turn marketing spend into measurable revenue.</p>
+          <div class="focus"><strong>Focus:</strong> Brand strategy, web &amp; SEO, paid media, production, consulting</div>
         </div>
       </div>
-
-      <div class="member">
-        <div class="member-image lauren">
-          <img class="member-photo" src="assets/lauren-headshot.jpg" alt="Lauren Nesbitt, Co-Founder of BRG Creative Group" loading="lazy">
+      <div class="member reveal" data-delay="1">
+        <div class="media r-4-5">
+          <img src="/assets/lauren-headshot.jpg" alt="Lauren Nesbitt, Co-Founder of BRG Creative Group" loading="lazy" width="1000" height="1250">
         </div>
-        <div class="member-body">
-          <div class="member-role">Co-Founder</div>
+        <div>
+          <div class="label">Co-founder</div>
           <h3>Lauren Nesbitt</h3>
-          <div class="member-title">Marketing & Yacht Media</div>
-          <p class="member-bio">Lauren brings deep yachting industry connections and a sharp marketing instinct for the kind of content and campaigns that move boats and elevate brokerages. She leads BRG's yacht media division and drives lead generation across the agency, partnering with brokerages, charter companies, and sales teams who need marketing that actually performs.</p>
-          <div class="member-focus">
-            <span>Marketing</span>
-            <span>Yacht Media</span>
-            <span>Lead Generation</span>
-            <span>Industry Network</span>
-            <span>Client Relations</span>
-          </div>
+          <div class="role">Marketing &amp; Yacht Media</div>
+          <p class="bio">Lauren brings deep yachting industry connections and a sharp marketing instinct for the kind of content and campaigns that move boats and elevate brokerages. She leads BRG's yacht media division and drives lead generation across the agency, partnering with brokerages, charter companies, and sales teams who need marketing that actually performs.</p>
+          <div class="focus"><strong>Focus:</strong> Marketing, yacht media, lead generation, industry network, client relations</div>
         </div>
       </div>
     </div>
-
-    <div class="team-network">
+    <div class="team-note reveal">
       <div class="label">Plus</div>
-      <h4>A trusted <em>network of specialists</em> for every engagement.</h4>
+      <p>A trusted network of specialists for every engagement.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section class="section rule" id="insights">
+  <div class="wrap">
+    <div class="head reveal">
+      <h2>Marketing intelligence, written from the field.</h2>
+      <p class="lead">Practical guides on yacht marketing, real estate video, event promotion, and growth for South Florida businesses. Every article draws on real client work, not theory.</p>
+    </div>
+    <div class="ledger reveal">
+      <a class="insight" href="/blog/how-to-market-a-yacht-for-charter">
+        <div class="label">Yachting</div>
+        <h3>How to Market a Yacht for Charter: 9 Strategies That Book Weeks</h3>
+        <div class="date">July 2026</div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+      <a class="insight" href="/blog/marketing-agency-cost">
+        <div class="label">Growth</div>
+        <h3>How Much Does a Marketing Agency Cost in 2026? Real Numbers</h3>
+        <div class="date">July 2026</div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+      <a class="insight" href="/blog/does-video-sell-homes-faster">
+        <div class="label">Real estate</div>
+        <h3>Does Video Actually Sell Homes Faster? What the Data Says</h3>
+        <div class="date">July 2026</div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+    <div style="margin-top: 32px;">
+      <a class="link" href="/blog">All articles <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="contact-label">Let's Build Something</div>
-  <h2 class="serif">Have a project<br>in <em>mind?</em></h2>
-
-  <div class="contact-cards">
-    <div class="contact-card">
-      <div class="role">Co-Founder · Strategy & Growth</div>
-      <div class="name">Trevor Bragg</div>
-      <div class="line-item">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-        </svg>
-        <a href="mailto:trevorbragg9@gmail.com">trevorbragg9@gmail.com</a>
+<section class="section field" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <h2>Have a project in mind?</h2>
+        <p class="lead">Bring the goal, the budget, or the proposal sitting in your inbox. We will tell you what the work should cost and what it should produce.</p>
+        <a class="btn" href="https://calendly.com/trevorbragg9/30min" target="_blank" rel="noopener">Book a discovery call <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
       </div>
-      <div class="line-item">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21l-2.26 1.13a11 11 0 005.52 5.52l1.13-2.26a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"/>
-        </svg>
-        <a href="tel:+13216147703">321-614-7703</a>
-      </div>
-    </div>
-
-    <div class="contact-card">
-      <div class="role">Co-Founder · Marketing & Yacht Media</div>
-      <div class="name">Lauren Nesbitt</div>
-      <div class="line-item">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-        </svg>
-        <a href="mailto:laurennes15@gmail.com">laurennes15@gmail.com</a>
-      </div>
-      <div class="line-item">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M3 5a2 2 0 012-2h2.28a1 1 0 01.95.68l1.5 4.49a1 1 0 01-.5 1.21l-2.26 1.13a11 11 0 005.52 5.52l1.13-2.26a1 1 0 011.21-.5l4.49 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z"/>
-        </svg>
-        <a href="tel:+13212614761">321-261-4761</a>
+      <div class="directory reveal" data-delay="1">
+        <div class="person">
+          <div>
+            <h4>Trevor Bragg</h4>
+            <div class="role">Co-Founder &middot; Strategy &amp; Growth</div>
+          </div>
+          <div>
+            <a href="mailto:trevorbragg9@gmail.com">trevorbragg9@gmail.com</a>
+            <a href="tel:+13216147703">321-614-7703</a>
+          </div>
+        </div>
+        <div class="person">
+          <div>
+            <h4>Lauren Nesbitt</h4>
+            <div class="role">Co-Founder &middot; Marketing &amp; Yacht Media</div>
+          </div>
+          <div>
+            <a href="mailto:laurennes15@gmail.com">laurennes15@gmail.com</a>
+            <a href="tel:+13212614761">321-261-4761</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="contact-cta-row">
-    <a href="https://calendly.com/trevorbragg9/30min" target="_blank" rel="noopener" class="btn btn-primary">Book a Discovery Call →</a>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="copyright">© 2026 BRG CREATIVE GROUP · ALL RIGHTS RESERVED</div>
-  <div class="socials">
-    <a href="https://www.instagram.com/brgcreativegroup" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.linkedin.com/company/bragg-productions/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="mailto:trevorbragg9@gmail.com">Email</a>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><svg class="brand-mark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 464.6 107.1" fill="currentColor" fill-rule="evenodd"><path d="M396.44 106.99C395.48 106.94 393.25 106.84 391.50 106.77C388.06 106.62 386.14 106.48 383.50 106.19C382.57 106.09 381.05 105.95 380.11 105.88C379.18 105.81 377.99 105.68 377.49 105.57C375.74 105.22 375.06 105.12 373.79 104.99C373.09 104.93 372.15 104.76 371.71 104.62C371.26 104.48 370.46 104.32 369.92 104.25C368.99 104.13 368.36 104.01 365.19 103.31C364.43 103.14 363.27 102.92 362.60 102.82C361.93 102.71 361.01 102.49 360.56 102.32C360.11 102.15 359.45 101.97 359.09 101.93C358.73 101.88 358.04 101.69 357.56 101.50C357.08 101.31 356.49 101.12 356.25 101.07C355.66 100.95 353.14 100.17 352.06 99.78C351.58 99.61 350.68 99.28 350.06 99.07C349.44 98.85 348.71 98.55 348.44 98.41C348.16 98.27 347.68 98.08 347.37 98.00C347.07 97.92 346.59 97.73 346.31 97.57C346.04 97.41 345.67 97.24 345.50 97.19C345.18 97.10 343.78 96.48 341.77 95.54C341.12 95.25 340.57 95.00 340.53 95.00C340.49 95.00 340.18 94.82 339.83 94.59C339.49 94.37 338.93 94.05 338.60 93.88C338.02 93.58 336.70 92.80 334.19 91.28C333.57 90.90 332.90 90.50 332.70 90.39C329.33 88.50 325.40 84.90 320.78 79.47C319.75 78.26 317.84 75.50 317.60 74.88C317.54 74.71 317.36 74.39 317.20 74.19C316.58 73.36 315.08 70.25 314.61 68.79C314.46 68.32 314.20 67.60 314.03 67.19C313.86 66.78 313.65 65.97 313.54 65.39C313.44 64.81 313.25 64.05 313.11 63.70C312.97 63.34 312.73 62.03 312.56 60.69C312.39 59.38 312.16 57.67 312.05 56.88C311.81 55.22 311.87 52.33 312.18 49.81C312.28 48.99 312.46 47.44 312.57 46.38C312.71 45.13 312.88 44.17 313.07 43.68C313.22 43.26 313.44 42.49 313.55 41.96C313.65 41.44 313.88 40.67 314.06 40.26C314.23 39.85 314.51 39.10 314.68 38.60C315.01 37.58 315.55 36.35 316.19 35.11C316.43 34.65 316.62 34.20 316.62 34.10C316.62 34.00 316.86 33.55 317.16 33.09C317.45 32.64 318.09 31.63 318.59 30.85C319.09 30.07 319.73 29.14 320.03 28.79C320.32 28.43 320.90 27.73 321.31 27.23C322.52 25.76 326.56 21.70 328.12 20.39C329.74 19.03 331.91 17.41 332.75 16.93C333.06 16.76 333.73 16.34 334.25 16.00C334.77 15.67 335.81 15.04 336.56 14.62C337.32 14.19 338.25 13.65 338.64 13.42C339.03 13.19 339.43 13.00 339.52 13.00C339.62 13.00 339.95 12.84 340.26 12.65C340.95 12.21 344.89 10.28 346.06 9.80C346.54 9.61 347.05 9.38 347.19 9.30C347.32 9.21 347.74 9.06 348.10 8.95C348.47 8.84 348.95 8.65 349.17 8.51C349.38 8.38 349.90 8.17 350.31 8.06C350.73 7.94 351.34 7.71 351.69 7.56C352.47 7.20 356.08 6.06 357.00 5.87C357.38 5.79 358.06 5.59 358.51 5.43C358.96 5.26 359.81 5.04 360.40 4.95C360.98 4.85 361.85 4.64 362.33 4.47C362.80 4.30 363.54 4.12 363.98 4.07C364.42 4.02 365.25 3.85 365.83 3.68C366.41 3.51 367.40 3.29 368.03 3.20C369.67 2.94 372.83 2.41 374.38 2.12C375.10 1.99 376.26 1.83 376.95 1.76C377.64 1.69 378.29 1.60 378.39 1.57C378.84 1.40 381.25 1.10 383.00 1.00C384.07 0.94 385.87 0.78 387.00 0.65C390.92 0.18 391.97 0.13 399.50 0.07C409.88 -0.02 416.73 0.21 419.62 0.74C420.00 0.81 421.35 0.93 422.62 0.99C423.90 1.06 425.58 1.23 426.38 1.37C427.17 1.51 428.57 1.68 429.50 1.75C430.43 1.83 431.67 1.99 432.25 2.13C432.83 2.26 433.76 2.42 434.31 2.49C434.86 2.56 435.79 2.72 436.38 2.86C436.96 3.00 437.97 3.17 438.62 3.24C439.28 3.32 440.09 3.46 440.44 3.57C440.78 3.68 441.77 3.87 442.62 3.99C443.48 4.12 444.48 4.34 444.84 4.48C445.20 4.63 446.02 4.81 446.65 4.88C447.29 4.96 448.12 5.14 448.50 5.28C448.88 5.42 449.78 5.66 450.50 5.83C451.22 5.99 452.29 6.26 452.88 6.43C453.46 6.60 454.36 6.86 454.88 7.00C456.08 7.35 456.31 7.42 457.06 7.73C457.41 7.87 457.87 8.05 458.10 8.13C458.32 8.22 458.56 8.38 458.62 8.50C458.69 8.62 458.75 10.78 458.76 13.30C458.78 17.59 458.76 17.90 458.55 18.14C458.27 18.44 457.80 18.41 456.75 18.03C456.37 17.89 455.25 17.50 454.25 17.17C453.25 16.84 451.73 16.33 450.88 16.03C450.02 15.73 448.75 15.32 448.06 15.13C447.38 14.93 446.66 14.71 446.48 14.64C446.30 14.57 445.29 14.31 444.23 14.06C443.18 13.82 441.98 13.50 441.56 13.37C441.15 13.24 440.31 13.05 439.70 12.94C439.09 12.84 438.24 12.64 437.82 12.51C437.39 12.38 436.40 12.18 435.61 12.06C434.83 11.95 433.68 11.74 433.06 11.61C432.44 11.48 431.54 11.31 431.06 11.24C430.58 11.17 429.62 11.01 428.94 10.88C428.25 10.75 427.38 10.60 427.00 10.56C426.62 10.52 425.52 10.37 424.56 10.23C421.73 9.82 421.13 9.76 419.86 9.76C419.20 9.75 418.36 9.69 417.99 9.62C415.37 9.13 413.79 9.06 403.81 9.06C394.06 9.06 394.06 9.06 391.19 9.40C389.61 9.58 387.86 9.77 387.31 9.81C386.76 9.86 385.69 10.00 384.94 10.13C384.18 10.26 383.03 10.44 382.38 10.55C380.60 10.82 378.25 11.33 377.49 11.61C377.12 11.74 376.50 11.92 376.12 12.00C375.75 12.08 374.93 12.31 374.31 12.50C373.69 12.70 372.85 12.94 372.44 13.04C371.34 13.31 368.91 14.16 368.17 14.54C367.82 14.72 367.27 14.93 366.94 15.01C366.62 15.09 365.61 15.54 364.70 16.00C363.80 16.46 362.91 16.89 362.74 16.94C362.41 17.04 360.61 18.07 359.50 18.78C359.12 19.03 358.48 19.44 358.06 19.70C356.75 20.53 354.93 21.88 353.38 23.18C351.43 24.81 351.03 25.19 349.57 26.73C347.72 28.69 345.39 31.55 344.54 32.92C343.72 34.25 341.75 37.99 341.75 38.23C341.75 38.30 341.50 39.03 341.20 39.84C340.90 40.65 340.59 41.62 340.51 42.00C340.44 42.38 340.24 43.14 340.07 43.69C339.38 45.93 338.91 49.21 338.80 52.44C338.71 55.06 338.99 59.23 339.31 60.12C339.42 60.42 339.57 61.24 339.64 61.93C339.72 62.62 339.91 63.55 340.06 64.00C340.22 64.45 340.42 65.12 340.50 65.50C340.59 65.88 340.84 66.64 341.06 67.19C341.29 67.74 341.51 68.33 341.56 68.50C341.66 68.86 342.67 71.14 342.97 71.69C343.08 71.89 343.35 72.40 343.56 72.81C344.28 74.19 344.83 74.99 346.49 77.06C348.64 79.74 350.75 81.90 353.45 84.20C354.89 85.42 356.50 86.61 357.15 86.95C357.38 87.06 357.79 87.31 358.06 87.50C358.53 87.82 360.02 88.65 362.56 90.02C364.19 90.89 366.36 91.94 366.94 92.13C367.21 92.22 367.83 92.48 368.31 92.71C368.79 92.94 369.34 93.12 369.54 93.12C369.74 93.12 370.18 93.27 370.52 93.44C370.86 93.61 371.51 93.83 371.95 93.94C372.39 94.04 372.98 94.24 373.26 94.38C373.54 94.52 374.23 94.75 374.79 94.88C376.39 95.25 377.86 95.62 378.81 95.88C379.29 96.02 380.14 96.18 380.69 96.25C381.24 96.31 382.02 96.48 382.43 96.62C382.89 96.78 383.79 96.93 384.75 97.01C386.38 97.14 387.43 97.27 389.31 97.58C390.42 97.76 393.01 97.91 398.50 98.11C401.30 98.22 408.18 98.12 414.80 97.87C417.48 97.77 418.54 97.69 419.42 97.49C420.05 97.35 421.63 97.16 422.94 97.07C424.46 96.96 425.81 96.79 426.69 96.59C427.44 96.42 428.51 96.24 429.06 96.19C429.61 96.15 430.54 96.01 431.12 95.88C431.71 95.75 432.50 95.61 432.88 95.56C433.25 95.52 434.10 95.35 434.75 95.19C435.40 95.03 436.30 94.87 436.75 94.83C437.20 94.79 437.93 94.63 438.38 94.46C438.83 94.29 439.54 94.08 439.96 94.00C441.38 93.72 441.22 95.70 441.32 77.06C441.40 60.88 441.40 60.81 441.15 60.50C440.90 60.19 440.90 60.19 437.23 60.11C435.21 60.06 429.42 60.02 424.35 60.01C415.14 60.00 415.14 60.00 414.79 59.70C414.44 59.40 414.44 59.40 414.40 56.54C414.36 53.39 414.45 52.82 415.00 52.54C415.24 52.42 419.65 52.38 435.44 52.38C446.51 52.38 457.36 52.34 459.56 52.30C462.37 52.24 463.67 52.26 463.91 52.36C464.67 52.66 464.62 51.38 464.62 74.62C464.62 97.87 464.67 96.58 463.91 96.89C463.72 96.97 463.14 97.22 462.62 97.44C462.11 97.67 461.35 97.96 460.94 98.10C460.52 98.23 459.85 98.46 459.44 98.60C458.48 98.92 455.19 99.85 454.12 100.09C453.68 100.19 452.86 100.41 452.30 100.58C451.74 100.75 450.70 100.99 449.98 101.12C449.27 101.25 448.38 101.47 448.00 101.60C447.62 101.74 446.98 101.88 446.56 101.93C446.15 101.97 445.28 102.17 444.62 102.37C443.97 102.57 442.37 102.90 441.06 103.12C439.76 103.34 438.12 103.65 437.44 103.81C436.75 103.97 435.62 104.14 434.94 104.19C434.20 104.24 433.29 104.40 432.73 104.58C432.09 104.78 431.22 104.92 430.10 105.00C428.72 105.11 426.50 105.43 425.44 105.69C425.30 105.73 424.12 105.81 422.81 105.87C421.51 105.94 420.13 106.05 419.75 106.13C418.80 106.32 414.42 106.65 410.12 106.86C406.86 107.02 398.72 107.10 396.44 106.99ZM315.70 105.78C315.65 105.73 308.84 105.66 300.58 105.62C283.70 105.55 285.56 105.67 283.95 104.58C283.52 104.30 282.79 103.82 282.31 103.52C279.75 101.94 276.61 99.86 276.06 99.37C275.93 99.25 275.64 99.06 275.44 98.95C275.23 98.84 274.69 98.48 274.23 98.15C272.93 97.22 271.80 96.45 270.25 95.41C266.12 92.66 263.49 90.92 262.88 90.54C261.48 89.66 258.68 87.85 258.38 87.62C258.20 87.49 257.78 87.21 257.44 87.00C257.09 86.79 256.50 86.39 256.12 86.12C255.25 85.48 253.47 84.26 252.96 83.94C252.74 83.81 252.08 83.36 251.50 82.94C249.89 81.80 245.67 79.00 245.55 79.00C245.49 79.00 245.12 78.79 244.72 78.53C244.33 78.27 243.64 77.84 243.19 77.56C242.10 76.90 238.17 74.30 237.00 73.47C236.83 73.34 236.07 72.84 235.33 72.34C234.58 71.84 233.88 71.38 233.78 71.31C233.67 71.24 233.13 70.89 232.58 70.54C232.02 70.18 231.31 69.71 231.00 69.50C230.69 69.29 229.96 68.81 229.38 68.44C228.17 67.66 227.37 67.12 226.59 66.55C226.30 66.34 225.83 66.04 225.54 65.90C225.25 65.75 224.98 65.57 224.94 65.51C224.90 65.44 224.58 65.21 224.22 65.00C223.12 64.34 219.25 61.75 217.39 60.43C216.96 60.12 216.96 60.12 213.39 60.12C209.38 60.12 207.13 60.00 204.49 59.63C203.50 59.49 201.93 59.32 201.00 59.25C194.86 58.79 190.87 58.16 189.19 57.37C186.88 56.30 185.92 55.84 185.69 55.71C185.07 55.37 183.14 54.31 182.69 54.07C182.41 53.93 181.91 53.63 181.57 53.40C181.23 53.18 180.86 53.00 180.75 53.00C180.63 53.00 180.14 52.73 179.65 52.41C178.75 51.82 178.51 51.41 178.90 51.17C178.98 51.12 192.57 51.06 209.10 51.04C225.63 51.02 239.20 50.97 239.25 50.93C239.31 50.90 240.50 50.82 241.90 50.75C243.29 50.68 245.06 50.51 245.81 50.38C246.57 50.24 247.87 50.05 248.71 49.94C249.57 49.83 250.73 49.58 251.36 49.37C251.99 49.17 252.65 49.00 252.84 49.00C253.03 49.00 253.58 48.85 254.06 48.68C254.54 48.50 255.39 48.23 255.94 48.07C256.49 47.91 257.25 47.65 257.62 47.50C258.00 47.35 258.63 47.12 259.02 46.99C260.26 46.59 263.44 44.94 264.06 44.38C264.20 44.26 264.45 44.08 264.62 44.00C265.99 43.30 268.81 40.52 269.63 39.06C269.76 38.83 270.01 38.42 270.18 38.16C270.53 37.62 271.31 35.75 271.51 34.96C271.83 33.67 271.95 31.11 271.79 29.10C271.64 27.23 271.60 27.06 271.02 25.54C270.18 23.35 269.46 22.22 267.62 20.21C266.99 19.52 264.15 17.32 262.98 16.61C261.30 15.60 258.33 14.25 257.11 13.94C256.67 13.83 255.74 13.54 255.05 13.31C254.36 13.07 253.67 12.87 253.53 12.87C253.39 12.87 252.75 12.71 252.11 12.52C251.46 12.32 250.63 12.12 250.25 12.07C249.87 12.02 248.97 11.82 248.25 11.62C247.42 11.39 246.36 11.21 245.38 11.13C244.52 11.06 243.47 10.95 243.06 10.88C240.99 10.53 236.76 10.49 202.69 10.46C167.56 10.44 167.56 10.44 166.89 10.09C166.52 9.90 166.06 9.62 165.86 9.47C165.18 8.93 163.98 8.14 161.54 6.62C161.15 6.38 160.40 5.91 159.87 5.56C159.34 5.22 158.74 4.84 158.55 4.72C158.35 4.60 157.79 4.25 157.31 3.94C156.83 3.63 156.09 3.21 155.67 3.01C155.24 2.81 154.84 2.54 154.76 2.40C154.58 2.05 154.59 1.56 154.78 1.41C154.88 1.33 170.05 1.30 198.12 1.31C237.44 1.34 241.41 1.36 242.44 1.55C243.16 1.68 244.95 1.80 247.44 1.88C251.28 2.01 253.84 2.20 256.38 2.56C257.10 2.66 258.95 2.89 260.50 3.06C262.05 3.24 263.85 3.49 264.50 3.63C265.15 3.76 266.26 3.96 266.95 4.06C267.64 4.16 268.51 4.35 268.87 4.50C269.23 4.64 269.95 4.81 270.48 4.89C271.01 4.96 271.83 5.16 272.31 5.33C272.79 5.50 273.61 5.75 274.12 5.87C275.16 6.13 277.87 7.12 278.75 7.56C279.06 7.71 279.54 7.91 279.81 8.00C280.09 8.09 280.62 8.32 281.00 8.51C281.38 8.71 282.00 9.01 282.38 9.18C283.82 9.85 285.81 10.97 287.15 11.89C287.65 12.23 288.29 12.66 288.56 12.85C290.37 14.06 293.46 17.06 294.90 19.01C295.55 19.89 296.53 21.66 296.81 22.48C296.97 22.94 297.22 23.59 297.37 23.92C297.97 25.32 298.46 30.73 298.13 32.19C298.06 32.46 297.95 33.22 297.87 33.87C297.77 34.65 297.52 35.64 297.13 36.81C296.16 39.62 295.08 41.31 292.69 43.70C290.36 46.04 288.18 47.68 285.67 49.00C285.32 49.18 284.87 49.45 284.67 49.59C284.34 49.83 283.86 50.06 280.94 51.44C280.32 51.73 279.51 52.07 279.13 52.19C278.76 52.31 278.28 52.51 278.07 52.63C277.86 52.75 277.35 52.92 276.94 53.00C276.52 53.09 275.88 53.31 275.50 53.50C275.12 53.69 274.60 53.88 274.34 53.93C274.08 53.97 273.63 54.12 273.34 54.24C272.79 54.48 270.10 55.16 269.12 55.31C268.82 55.36 268.14 55.53 267.62 55.70C267.11 55.86 266.22 56.05 265.65 56.12C265.08 56.19 264.16 56.38 263.59 56.55C263.03 56.73 261.97 56.92 261.24 57.00C260.51 57.07 259.53 57.21 259.05 57.30C256.74 57.77 256.22 57.85 255.06 57.93C254.38 57.97 252.83 58.12 251.62 58.25C250.42 58.39 249.13 58.51 248.76 58.53C247.58 58.59 247.54 59.41 248.69 60.01C249.03 60.18 249.73 60.60 250.24 60.94C250.75 61.28 251.50 61.77 251.90 62.03C252.80 62.61 253.89 63.31 254.70 63.83C255.04 64.05 255.48 64.35 255.69 64.49C256.05 64.75 257.27 65.53 258.91 66.55C259.34 66.82 259.91 67.20 260.19 67.40C260.46 67.59 261.15 68.05 261.71 68.41C264.25 70.03 266.38 71.45 267.12 72.01C267.57 72.34 268.15 72.73 268.40 72.87C268.66 73.01 269.20 73.34 269.61 73.60C270.02 73.85 270.51 74.16 270.70 74.28C270.90 74.39 271.69 74.90 272.45 75.40C274.30 76.62 274.86 76.98 276.17 77.84C276.78 78.24 277.58 78.76 277.94 79.00C278.30 79.24 278.87 79.62 279.20 79.84C279.54 80.06 280.07 80.42 280.38 80.63C280.68 80.85 281.49 81.37 282.17 81.79C283.59 82.69 284.39 83.21 285.58 84.03C286.05 84.35 286.92 84.94 287.52 85.34C288.11 85.74 288.68 86.12 288.78 86.19C289.26 86.53 293.21 89.11 293.78 89.47C295.25 90.38 296.59 91.26 297.07 91.62C297.36 91.83 297.64 92.00 297.70 92.00C297.76 92.00 297.95 92.12 298.12 92.26C298.30 92.40 298.92 92.82 299.50 93.21C300.08 93.59 301.11 94.28 301.78 94.74C302.44 95.19 303.29 95.76 303.66 96.00C304.39 96.47 305.42 97.16 306.12 97.66C306.90 98.20 309.12 99.68 309.57 99.95C309.80 100.09 310.12 100.32 310.28 100.45C310.44 100.59 310.98 101.00 311.50 101.36C312.02 101.71 312.63 102.14 312.88 102.31C314.12 103.18 314.75 103.58 315.41 103.91C316.35 104.38 316.81 105.09 316.47 105.53C316.28 105.76 315.83 105.92 315.70 105.78ZM29.33 105.62C0.73 105.56 0.73 105.56 0.36 105.15C-0.00 104.75 -0.00 104.75 -0.00 53.44C-0.00 2.14 -0.00 2.14 0.28 1.81C0.44 1.63 0.76 1.44 1.00 1.39C1.74 1.23 82.34 1.31 83.94 1.48C84.69 1.55 87.31 1.71 89.75 1.81C92.19 1.92 94.67 2.06 95.25 2.13C96.37 2.26 97.90 2.41 100.19 2.62C102.56 2.84 103.73 2.99 106.44 3.45C107.88 3.70 109.48 3.95 110.00 4.02C110.52 4.09 111.58 4.31 112.38 4.50C113.17 4.69 114.07 4.89 114.38 4.94C114.68 4.99 115.44 5.18 116.06 5.38C116.68 5.57 117.81 5.91 118.56 6.13C121.51 7.00 123.76 7.80 125.06 8.43C125.41 8.60 126.45 9.11 127.38 9.56C132.38 11.99 135.73 14.44 137.73 17.12C139.95 20.10 140.44 21.21 140.99 24.47C141.68 28.50 140.93 33.10 139.19 35.43C138.98 35.71 138.72 36.08 138.61 36.25C138.18 36.92 136.17 39.06 135.29 39.79C133.32 41.41 131.45 42.61 129.38 43.58C128.45 44.02 127.47 44.49 127.21 44.63C126.94 44.78 126.41 45.00 126.03 45.14C125.65 45.27 125.27 45.43 125.18 45.50C125.10 45.57 124.58 45.80 124.04 45.99C123.50 46.19 122.55 46.55 121.93 46.79C120.50 47.35 118.28 47.96 116.75 48.20C115.44 48.41 114.79 48.73 114.67 49.22C114.56 49.65 114.99 50.00 115.61 50.00C115.86 50.00 116.54 50.12 117.11 50.25C117.69 50.39 118.73 50.59 119.43 50.70C120.12 50.80 121.00 50.96 121.38 51.06C121.75 51.16 122.51 51.29 123.05 51.37C123.60 51.44 124.49 51.64 125.03 51.81C125.57 51.99 126.15 52.12 126.33 52.12C126.50 52.12 127.08 52.27 127.60 52.45C128.13 52.63 128.98 52.88 129.48 53.01C129.99 53.14 130.58 53.35 130.80 53.49C131.01 53.62 131.44 53.76 131.75 53.81C132.06 53.86 132.82 54.09 133.44 54.32C134.06 54.55 134.96 54.86 135.44 55.01C136.60 55.37 139.05 56.43 140.69 57.28C140.96 57.42 141.61 57.76 142.12 58.03C144.01 59.01 145.32 59.83 146.93 61.05C148.20 62.01 151.26 64.99 151.97 65.96C152.82 67.11 153.61 68.38 153.76 68.85C153.84 69.10 154.01 69.47 154.14 69.68C154.26 69.89 154.57 70.91 154.82 71.94C155.38 74.27 155.53 77.07 155.20 79.19C154.96 80.68 154.38 82.92 154.09 83.44C153.98 83.64 153.79 84.04 153.68 84.31C153.58 84.59 153.28 85.12 153.03 85.50C152.78 85.88 152.43 86.41 152.26 86.68C151.04 88.53 147.32 92.05 145.24 93.31C145.02 93.45 144.49 93.77 144.07 94.03C143.65 94.29 142.86 94.72 142.31 94.99C141.76 95.26 141.17 95.57 141.00 95.67C140.72 95.84 139.82 96.28 137.25 97.47C136.80 97.68 136.20 97.91 135.91 97.99C135.62 98.07 135.03 98.30 134.60 98.50C134.17 98.71 133.73 98.87 133.63 98.87C133.53 98.87 133.08 99.01 132.63 99.18C132.18 99.34 131.03 99.69 130.06 99.94C129.10 100.20 128.00 100.52 127.62 100.65C127.25 100.78 126.51 100.97 125.98 101.06C125.45 101.16 124.80 101.35 124.53 101.49C124.26 101.62 123.48 101.83 122.80 101.94C122.12 102.05 121.14 102.24 120.62 102.38C120.10 102.51 117.80 102.90 115.49 103.25C110.24 104.04 109.95 104.08 107.75 104.25C106.75 104.33 105.38 104.51 104.69 104.64C103.82 104.82 102.50 104.93 100.38 105.01C98.69 105.07 96.47 105.18 95.44 105.25C94.41 105.32 92.78 105.43 91.81 105.49C89.51 105.65 64.71 105.70 29.33 105.62ZM93.08 96.28C97.87 96.05 104.39 95.17 107.19 94.37C107.88 94.17 108.75 93.98 109.12 93.93C109.50 93.89 110.19 93.69 110.65 93.49C111.10 93.29 111.60 93.12 111.75 93.12C111.90 93.12 112.57 92.91 113.23 92.64C113.89 92.38 114.60 92.12 114.80 92.07C115.21 91.98 117.40 91.02 118.19 90.60C118.46 90.45 119.05 90.14 119.50 89.91C123.26 87.95 125.21 86.16 127.11 82.93C127.39 82.44 127.62 81.98 127.62 81.89C127.62 81.81 127.79 81.38 128.00 80.95C128.20 80.51 128.43 79.77 128.50 79.30C128.58 78.82 128.72 78.08 128.82 77.65C129.05 76.64 129.05 75.42 128.82 74.51C128.71 74.12 128.57 73.39 128.50 72.90C128.42 72.34 128.21 71.64 127.94 71.07C127.70 70.56 127.50 70.11 127.50 70.07C127.50 70.03 127.32 69.72 127.09 69.38C126.87 69.04 126.55 68.53 126.38 68.23C125.80 67.23 123.44 65.00 121.88 63.98C119.53 62.44 116.80 61.12 113.62 60.01C112.89 59.75 112.24 59.51 112.16 59.46C112.08 59.41 111.46 59.23 110.79 59.07C107.75 58.31 106.17 57.99 105.03 57.88C104.35 57.81 103.72 57.73 103.62 57.69C102.99 57.45 100.06 57.10 97.88 57.00C96.47 56.93 94.27 56.76 93.00 56.61C90.72 56.35 90.21 56.34 57.75 56.25C39.63 56.20 24.65 56.19 24.46 56.22C23.99 56.30 23.75 56.70 23.72 57.45C23.70 57.79 23.71 66.54 23.72 76.89C23.75 98.89 23.51 96.27 25.52 96.38C27.96 96.52 90.03 96.42 93.08 96.28ZM81.12 47.08C84.96 47.03 89.19 46.69 90.69 46.32C91.10 46.22 92.16 46.04 93.04 45.94C93.92 45.83 95.23 45.58 95.96 45.37C96.70 45.17 97.42 45.00 97.57 45.00C97.73 45.00 98.97 44.63 100.33 44.18C107.06 41.95 111.96 38.36 113.81 34.31C114.74 32.27 115.19 28.85 114.81 26.75C114.69 26.10 114.55 25.31 114.50 24.99C114.21 23.33 112.61 20.50 111.10 18.99C110.51 18.39 108.73 17.00 108.57 17.00C108.52 17.00 108.17 16.77 107.78 16.50C107.40 16.22 107.02 16.00 106.93 16.00C106.85 16.00 106.46 15.83 106.07 15.62C104.36 14.70 99.50 12.87 98.79 12.87C98.64 12.88 98.11 12.73 97.61 12.56C97.10 12.39 96.29 12.19 95.81 12.12C95.33 12.05 94.12 11.82 93.12 11.62C92.13 11.42 90.61 11.20 89.75 11.13C88.89 11.06 87.99 10.97 87.75 10.94C85.05 10.55 82.14 10.52 53.38 10.48C37.37 10.46 24.24 10.49 24.14 10.55C23.69 10.84 23.69 11.05 23.75 29.09C23.80 42.57 23.85 46.77 23.96 46.89C24.04 46.97 24.32 47.07 24.57 47.11C25.06 47.19 74.81 47.16 81.12 47.08Z"/></svg></a>
+        <p class="tag">Strategy. Story. Impact. A marketing and growth consultancy in Jupiter, Florida.</p>
+      </div>
+      <div>
+        <h4>Firm</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/work">Work &amp; Case Studies</a></li>
+          <li><a href="/blog">Articles</a></li>
+          <li><a href="https://calendly.com/trevorbragg9/30min" target="_blank" rel="noopener">Book a call</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/brgcreativegroup" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/bragg-productions/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:trevorbragg9@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>&copy; 2026 BRG Creative Group. All rights reserved.</span>
+      <span>Jupiter &middot; Palm Beach Gardens &middot; Florida</span>
+    </div>
   </div>
 </footer>
 
-<script>
-  // Mobile nav toggle
-  (function() {
-    var toggle = document.getElementById('navToggle');
-    var links = document.getElementById('navLinks');
-    if (!toggle || !links) return;
-
-    toggle.addEventListener('click', function() {
-      var isOpen = links.classList.toggle('open');
-      toggle.classList.toggle('open', isOpen);
-      var navEl = toggle.parentElement;
-      if (navEl) navEl.classList.toggle('menu-open', isOpen);
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-
-    // Close menu when a link is tapped
-    links.querySelectorAll('a').forEach(function(a) {
-      a.addEventListener('click', function() {
-        links.classList.remove('open');
-        toggle.classList.remove('open');
-        var navEl2 = toggle.parentElement;
-        if (navEl2) navEl2.classList.remove('menu-open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
-    });
-  })();
-
-  // Force-play videos when they scroll into view (handles strict autoplay policies).
-  // Poster image remains as a graceful fallback if the browser still refuses to play.
-  (function() {
-    var videos = document.querySelectorAll('video');
-    if (!videos.length) return;
-
-    // Helper: try to play a video, swallow errors silently (poster will show)
-    function tryPlay(video) {
-      var playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(function() {
-          // Autoplay was blocked — poster image stays visible. No console noise.
-        });
-      }
-    }
-
-    // If IntersectionObserver isn't available (very old browsers), just try playing all videos once
-    if (!('IntersectionObserver' in window)) {
-      videos.forEach(tryPlay);
-      return;
-    }
-
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        var video = entry.target;
-        if (entry.isIntersecting) {
-          tryPlay(video);
-        } else {
-          // Pause off-screen videos to save resources
-          if (!video.paused) {
-            video.pause();
-          }
-        }
-      });
-    }, {
-      threshold: 0.1,        // start playing when 10% visible
-      rootMargin: '50px'     // begin loading slightly before they enter view
-    });
-
-    videos.forEach(function(video) {
-      observer.observe(video);
-    });
-
-    // Also retry playback on first user interaction anywhere on the page
-    // (some browsers unlock autoplay only after the user touches/clicks the page)
-    function unlockOnInteraction() {
-      videos.forEach(tryPlay);
-      window.removeEventListener('touchstart', unlockOnInteraction);
-      window.removeEventListener('click', unlockOnInteraction);
-      window.removeEventListener('scroll', unlockOnInteraction);
-    }
-    window.addEventListener('touchstart', unlockOnInteraction, { passive: true, once: false });
-    window.addEventListener('click', unlockOnInteraction, { once: false });
-    window.addEventListener('scroll', unlockOnInteraction, { passive: true, once: false });
-  })();
-</script>
-
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
