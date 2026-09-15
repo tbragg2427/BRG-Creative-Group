@@ -59,7 +59,7 @@
     overflow: hidden;
   }
   .hero-video { position: absolute; inset: 0; }
-  .hero-video video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-video img, .hero-video video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
   .hero-tint { position: absolute; inset: 0; background: rgba(15, 34, 51, 0.34); }
   .hero-lockup {
     position: absolute;
@@ -106,12 +106,12 @@
   /* Entrance: one authored moment */
   .js .hero-lockup .mark-svg,
   .js .hero-lockup .rule,
-  .js .hero-lockup .slogan { opacity: 0; animation: heroIn 1100ms var(--ease-out) forwards; }
-  .js .hero-lockup .mark-svg { transform: translateY(18px); animation-delay: 200ms; }
-  .js .hero-lockup .rule { transform: scaleX(0); animation-name: ruleIn; animation-delay: 700ms; animation-duration: 800ms; }
-  .js .hero-lockup .slogan { transform: translateY(10px); animation-delay: 900ms; }
-  .js .hero-foot { opacity: 0; animation: heroIn 900ms var(--ease-out) 1200ms forwards; }
-  .js .hero-video { opacity: 0; animation: fadeIn 1400ms var(--ease-out) forwards; }
+  .js .hero-lockup .slogan { opacity: 0; animation: heroIn 900ms var(--ease-out) forwards; }
+  .js .hero-lockup .mark-svg { transform: translateY(18px); animation-delay: 60ms; }
+  .js .hero-lockup .rule { transform: scaleX(0); animation-name: ruleIn; animation-delay: 380ms; animation-duration: 700ms; }
+  .js .hero-lockup .slogan { transform: translateY(10px); animation-delay: 520ms; }
+  .js .hero-foot { opacity: 0; animation: heroIn 700ms var(--ease-out) 250ms forwards; }
+  .js .hero-video video { opacity: 0; animation: fadeIn 900ms var(--ease-out) 200ms forwards; }
   @keyframes heroIn { to { opacity: 1; transform: none; } }
   @keyframes ruleIn { to { opacity: 1; transform: scaleX(1); } }
   @keyframes fadeIn { to { opacity: 1; } }
@@ -312,7 +312,7 @@
     .hero-actions .btn { width: 100%; justify-content: center; }
   }
   @media (prefers-reduced-motion: reduce) {
-    .js .hero-lockup .mark-svg, .js .hero-lockup .rule, .js .hero-lockup .slogan, .js .hero-foot, .js .hero-video { opacity: 1; transform: none; animation: none; }
+    .js .hero-lockup .mark-svg, .js .hero-lockup .rule, .js .hero-lockup .slogan, .js .hero-foot, .js .hero-video video { opacity: 1; transform: none; animation: none; }
   }
 </style>
 </head>
@@ -355,9 +355,8 @@
 <!-- HERO -->
 <section class="hero" data-hero>
   <div class="hero-video">
-    <video data-autoplay muted loop playsinline preload="auto" poster="/assets/yachting-poster.jpg" aria-hidden="true">
-      <source src="/assets/yachting-loop.mp4" type="video/mp4">
-    </video>
+    <img class="hero-poster" src="/assets/yachting-poster.webp" alt="" width="1920" height="1080" fetchpriority="high" decoding="async">
+    <video data-autoplay data-src="/assets/yachting-loop.mp4" data-eager muted loop playsinline preload="none" aria-hidden="true"></video>
   </div>
   <div class="hero-tint" aria-hidden="true"></div>
   <div class="hero-lockup" role="img" aria-label="BRG Creative Group. Strategy. Story. Impact.">
@@ -488,9 +487,7 @@
 
       <div class="industry reveal">
         <div class="media r-16-9">
-          <video data-autoplay muted loop playsinline preload="metadata" poster="/assets/yachting-poster.jpg" aria-hidden="true">
-            <source src="/assets/yachting-loop.mp4" type="video/mp4">
-          </video>
+          <video data-autoplay data-src="/assets/yachting-loop.mp4" muted loop playsinline preload="none" data-poster="/assets/yachting-poster.webp" aria-hidden="true"></video>
         </div>
         <div class="meta">
           <div>
@@ -504,9 +501,7 @@
 
       <div class="industry reveal" data-delay="1">
         <div class="media r-16-9">
-          <video data-autoplay muted loop playsinline preload="metadata" poster="/assets/realestate-poster.jpg" aria-hidden="true">
-            <source src="/assets/realestate-loop.mp4" type="video/mp4">
-          </video>
+          <video data-autoplay data-src="/assets/realestate-loop.mp4" muted loop playsinline preload="none" data-poster="/assets/realestate-poster.webp" aria-hidden="true"></video>
         </div>
         <div class="meta">
           <div>
@@ -520,9 +515,7 @@
 
       <div class="industry reveal">
         <div class="media r-16-9">
-          <video data-autoplay muted loop playsinline preload="metadata" poster="/assets/events-poster.jpg" aria-hidden="true">
-            <source src="/assets/events-loop.mp4" type="video/mp4">
-          </video>
+          <video data-autoplay data-src="/assets/events-loop.mp4" muted loop playsinline preload="none" data-poster="/assets/events-poster.webp" aria-hidden="true"></video>
         </div>
         <div class="meta">
           <div>
@@ -536,9 +529,7 @@
 
       <div class="industry reveal" data-delay="1">
         <div class="media r-16-9">
-          <video data-autoplay muted loop playsinline preload="metadata" poster="/assets/smb-poster.jpg" aria-hidden="true">
-            <source src="/assets/smb-loop.mp4" type="video/mp4">
-          </video>
+          <video data-autoplay data-src="/assets/smb-loop.mp4" muted loop playsinline preload="none" data-poster="/assets/smb-poster.webp" aria-hidden="true"></video>
         </div>
         <div class="meta">
           <div>
@@ -600,7 +591,7 @@
     <div class="team">
       <div class="member reveal">
         <div class="media r-4-5">
-          <img src="/assets/trevor-headshot.jpg" alt="Trevor Bragg, Co-Founder of BRG Creative Group" loading="lazy" width="1000" height="1250">
+          <img src="/assets/trevor-headshot.webp" alt="Trevor Bragg, Co-Founder of BRG Creative Group" loading="lazy" width="800" height="1000">
         </div>
         <div>
           <div class="label">Co-founder</div>
@@ -612,7 +603,7 @@
       </div>
       <div class="member reveal" data-delay="1">
         <div class="media r-4-5">
-          <img src="/assets/lauren-headshot.jpg" alt="Lauren Nesbitt, Co-Founder of BRG Creative Group" loading="lazy" width="1000" height="1250">
+          <img src="/assets/lauren-headshot.webp" alt="Lauren Nesbitt, Co-Founder of BRG Creative Group" loading="lazy" width="800" height="1000">
         </div>
         <div>
           <div class="label">Co-founder</div>
