@@ -90,8 +90,8 @@
   var videos = document.querySelectorAll('video[data-autoplay]');
   /* Lazy sources: a video with data-src downloads nothing until it is near the viewport */
   var loadSrc = function (v) {
-    if (v.dataset.poster && !v.poster) v.poster = v.dataset.poster;
     if (v.dataset.src && !v.dataset.loaded) {
+      v.addEventListener('playing', function () { v.classList.add('is-playing'); });
       v.src = v.dataset.src;
       v.dataset.loaded = '1';
       v.load();
