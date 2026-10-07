@@ -92,7 +92,10 @@
   var loadSrc = function (v) {
     if (v.dataset.src && !v.dataset.loaded) {
       v.addEventListener('playing', function () { v.classList.add('is-playing'); });
-      v.src = v.dataset.src;
+      /* Large screens on a normal connection get the full-resolution cut */
+      var conn = navigator.connection || {};
+      var wantHd = v.dataset.srcHd && window.innerWidth >= 1024 && !conn.saveData && conn.effectiveType !== '2g' && conn.effectiveType !== '3g';
+      v.src = wantHd ? v.dataset.srcHd : v.dataset.src;
       v.dataset.loaded = '1';
       v.load();
     }
