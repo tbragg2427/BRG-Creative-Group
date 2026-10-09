@@ -8,12 +8,12 @@
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-<meta name="description" content="Selected work and case studies from BRG Creative Group: yacht media reels, an SEO program that put a Florida builder on top of local search, and a content engine that lifted charter inquiries 20%.">
+<meta name="description" content="Selected work from BRG Creative Group: launch films for software and AI products, yacht media reels, and case studies with real results.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.brgcreativegroup.com/work">
 <link rel="canonical" href="https://www.brgcreativegroup.com/work">
 <meta property="og:title" content="Work &amp; Case Studies | BRG Creative Group">
-<meta property="og:description" content="Reels, results, and how we got there.">
+<meta property="og:description" content="Launch films, reels, results, and how we got there.">
 <meta property="og:image" content="https://www.brgcreativegroup.com/assets/brg-social-preview.png">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -26,6 +26,15 @@
   .page-head h1 { font-size: clamp(40px, 5.6vw, 84px); max-width: 16ch; }
   .page-head .head { margin-top: 0; align-items: end; }
 
+  /* Launch films */
+  .films { display: grid; grid-template-columns: 1fr 1fr; gap: 48px 40px; }
+  .films .film:first-child { grid-column: 1 / -1; }
+  .film .meta { margin-top: 18px; }
+  .film .label { margin-bottom: 8px; }
+  .film h3 { font-size: 24px; margin-bottom: 8px; }
+  .film p { font-family: var(--serif); font-size: 16px; line-height: 1.55; color: var(--ink-2); max-width: 60ch; }
+  .films-cta { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--rule-strong); }
+
   /* Reels */
   .reels {
     display: grid;
@@ -33,6 +42,7 @@
     gap: 48px;
   }
   .reel .media { aspect-ratio: 9 / 16; }
+  .reel.film .media { aspect-ratio: 16 / 9; }
   .reel .meta { margin-top: 18px; }
   .reel .label { margin-bottom: 8px; }
   .reel h3 { font-size: 24px; margin-bottom: 8px; }
@@ -113,6 +123,8 @@
   @media (max-width: 900px) {
     .page-head { padding-top: calc(var(--nav-h) + 56px); }
     .reels { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .films { grid-template-columns: 1fr; gap: 36px; }
+    .films-cta .btn { width: 100%; justify-content: center; }
     .case { padding: 48px 0; }
     .case-top { grid-template-columns: 1fr; gap: 32px; margin-bottom: 32px; }
     .case-row { grid-template-columns: 1fr; gap: 12px; padding: 28px 0; }
@@ -137,6 +149,7 @@
       <li><a href="/#services">Services</a></li>
       <li><a href="/#approach">Approach</a></li>
       <li><a href="/#industries">Industries</a></li>
+      <li><a href="/launch-films">Launch Films</a></li>
       <li><a href="/#team">Team</a></li>
       <li class="dd" data-open="false">
         <button type="button" aria-expanded="false" aria-haspopup="true">Resources <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -152,10 +165,85 @@
 
 <main id="main">
 
-<section class="page-head" id="work" style="padding-bottom: var(--section);">
+<section class="page-head" id="launch" style="padding-bottom: var(--section);">
   <div class="wrap">
     <div class="head">
       <h1>The work speaks for itself.</h1>
+      <p class="lead">Launch films for software, AI, and tech companies, then a few recent cuts from our yacht media division. Tap the sound on any film to watch it the way it was made to be seen.</p>
+    </div>
+
+    <div class="films">
+      <div class="reel film reveal">
+        <div class="media r-16-9">
+          <img class="media-poster" src="/assets/launch-brg-poster.webp" alt="" width="1600" height="900" loading="lazy" decoding="async">
+          <video data-autoplay data-src="/assets/launch-brg.mp4" muted loop playsinline preload="none"></video>
+          <button class="sound-btn" aria-label="Toggle sound" aria-pressed="false">
+            <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          </button>
+        </div>
+        <div class="meta">
+          <div class="label">Launch film · BRG Creative Group</div>
+          <h3>Send us your product. We send back the film.</h3>
+          <p>Our own launch film, made the way we make them for clients: kinetic type, a real interface, three formats, and sound design, in 45 seconds.</p>
+        </div>
+      </div>
+      <div class="reel film reveal">
+        <div class="media r-16-9">
+          <img class="media-poster" src="/assets/launch-lexmere-poster.webp" alt="" width="1600" height="900" loading="lazy" decoding="async">
+          <video data-autoplay data-src="/assets/launch-lexmere.mp4" muted loop playsinline preload="none"></video>
+          <button class="sound-btn" aria-label="Toggle sound" aria-pressed="false">
+            <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          </button>
+        </div>
+        <div class="meta">
+          <div class="label">Concept film · Legal tech</div>
+          <h3>Lexmere</h3>
+          <p>A contract-review tool that reads every word and flags the clauses that matter. Concept film by BRG.</p>
+        </div>
+      </div>
+      <div class="reel film reveal">
+        <div class="media r-16-9">
+          <img class="media-poster" src="/assets/launch-fennic-poster.webp" alt="" width="1600" height="900" loading="lazy" decoding="async">
+          <video data-autoplay data-src="/assets/launch-fennic.mp4" muted loop playsinline preload="none"></video>
+          <button class="sound-btn" aria-label="Toggle sound" aria-pressed="false">
+            <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          </button>
+        </div>
+        <div class="meta">
+          <div class="label">Concept film · Fintech</div>
+          <h3>Fennic</h3>
+          <p>Reconciles spend and closes the books automatically. Concept film by BRG.</p>
+        </div>
+      </div>
+      <div class="reel film reveal">
+        <div class="media r-16-9">
+          <img class="media-poster" src="/assets/launch-haulnote-poster.webp" alt="" width="1600" height="900" loading="lazy" decoding="async">
+          <video data-autoplay data-src="/assets/launch-haulnote.mp4" muted loop playsinline preload="none"></video>
+          <button class="sound-btn" aria-label="Toggle sound" aria-pressed="false">
+            <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          </button>
+        </div>
+        <div class="meta">
+          <div class="label">Concept film · Logistics</div>
+          <h3>Haulnote</h3>
+          <p>Plans routes, tracks trucks, and gets small fleets paid. Concept film by BRG.</p>
+        </div>
+      </div>
+    </div>
+    <div class="films-cta">
+      <a class="btn" href="/launch-films">See the launch films practice <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="head">
+      <h2>Yacht media.</h2>
       <p class="lead">A few recent cuts from our yacht media division. Tap the sound to watch with audio, the way they were made to be seen.</p>
     </div>
 
@@ -317,6 +405,7 @@
           <li><a href="/#services">Services</a></li>
           <li><a href="/#approach">Approach</a></li>
           <li><a href="/#industries">Industries</a></li>
+          <li><a href="/launch-films">Launch Films</a></li>
           <li><a href="/#team">Team</a></li>
         </ul>
       </div>
