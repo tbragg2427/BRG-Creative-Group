@@ -97,6 +97,15 @@
       var wantHd = v.dataset.srcHd && window.innerWidth >= 1024 && !conn.saveData && conn.effectiveType !== '2g' && conn.effectiveType !== '3g';
       v.src = wantHd ? v.dataset.srcHd : v.dataset.src;
       v.dataset.loaded = '1';
+      /* If the HD file is missing or fails, fall back to the standard cut instead of sitting on the poster */
+      if (wantHd) {
+        v.addEventListener('error', function onErr() {
+          v.removeEventListener('error', onErr);
+          v.src = v.dataset.src;
+          v.load();
+          var p = v.play(); if (p !== undefined) p.catch(function () {});
+        });
+      }
       v.load();
     }
   };
